@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Cappy Studios | There is Value in Every Idea</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Cappy Studios - Independent game development studio creating web games, idle games, and creative digital experiences." />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload landing">
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-logo">CAPPY STUDIOS</div>
+    </div>
+
+    <!-- Ripple Effect Canvas -->
+    <canvas id="ripple-canvas"></canvas>
+
+    <div id="page-wrapper">
+
+        <!-- Header / Navigation -->
+        <header id="header" class="alt">
+            <h1 id="logo"><a href="index.html">Cappy Studios</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                        <ul>
+                            <li><a href="projects.html#games">Games</a></li>
+                            <li><a href="projects.html#websites">Websites & Apps</a></li>
+                            <li><a href="projects.html#pixel-art">Pixel Art</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="button primary">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Banner with Sliding Background -->
+        <section id="banner">
+            <!-- Sliding Background Images -->
+            <div class="hero-slider">
+                <!-- Add your game screenshots here - these will crossfade -->
+                <div class="slide" style="background-image: url('images/games/snake-50-bg.svg');"></div>
+                <div class="slide" style="background-image: url('images/games/crybaby-bg.svg');"></div>
+                <div class="slide" style="background-image: url('images/games/trucker-idle-bg.svg');"></div>
+                <div class="slide" style="background-image: url('images/banner.jpg');"></div>
+            </div>
+
+            <div class="content">
+                <header>
+                    <span class="tagline">There is Value in Every Idea</span>
+                    <h2>Cappy Studios</h2>
+                    <p>Independent game development and creative digital experiences.<br />
+                    Building web games, idle games, and tools that bring ideas to life.</p>
+                </header>
+                <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+            </div>
+            <a href="#about" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- About / Introduction Section -->
+        <section id="about" class="spotlight style1 bottom">
+            <span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 col-12-medium">
+                            <header>
+                                <h2>The Vision</h2>
+                                <p>Every project starts with a spark of curiosity</p>
+                            </header>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <p>Cappy Studios is a one-person creative studio focused on bringing 
+                            ideas to life through games, web apps, and digital art. From retro-inspired 
+                            web games to ambitious idle game projects, every creation is built with 
+                            passion and a love for learning.</p>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <p>Based in Belgium, combining a background in finance with a deep passion 
+                            for coding, game development, and creative expression. CS50 certified and 
+                            always building something new.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#games" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- Games Showcase Section -->
+        <section id="games" class="wrapper style1 special fade-up">
+            <div class="container">
+                <header class="major">
+                    <h2>Games & Projects</h2>
+                    <p>From web-based classics to ambitious idle games in development</p>
+                </header>
+
+                <div class="box alt">
+                    <div class="row gtr-uniform">
+                        
+                        <!-- Snake-50 - LIVE -->
+                        <div class="col-6 col-12-medium">
+                            <div class="glass-card game-card">
+                                <img src="images/games/snake-50-preview.svg" alt="Snake-50 Game" />
+                                <div class="overlay">
+                                    <span class="status live">Live</span>
+                                    <h3>Snake-50</h3>
+                                    <p>Classic snake reimagined with multiple game modes, 
+                                    authentication, and global leaderboards. Built with 
+                                    vanilla JavaScript and Firebase.</p>
+                                    <a href="#" class="btn btn-primary">Play Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Once I Was a Crybaby - IN DEV -->
+                        <div class="col-6 col-12-medium">
+                            <div class="glass-card game-card">
+                                <img src="images/games/crybaby-preview.svg" alt="Once I Was a Crybaby" />
+                                <div class="overlay">
+                                    <span class="status development">In Development</span>
+                                    <h3>Once I Was a Crybaby</h3>
+                                    <p>A narrative-driven adventure built with Godot. 
+                                    A deep story-focused experience, developed in collaboration 
+                                    with a CS master partner.</p>
+                                    <a href="#" class="btn btn-outline">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trucker Idle - PLANNED -->
+                        <div class="col-6 col-12-medium">
+                            <div class="glass-card game-card">
+                                <img src="images/games/trucker-idle-preview.svg" alt="Trucker Idle" />
+                                <div class="overlay">
+                                    <span class="status planned">Planned</span>
+                                    <h3>Trucker Idle</h3>
+                                    <p>An idle/incremental game about building your trucking 
+                                    empire. Plan routes, upgrade vehicles, and watch your 
+                                    business grow.</p>
+                                    <a href="#" class="btn btn-outline">Coming Soon</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tea Farmer Idle - PLANNED -->
+                        <div class="col-6 col-12-medium">
+                            <div class="glass-card game-card">
+                                <img src="images/games/tea-farmer-preview.svg" alt="Tea Farmer Idle" />
+                                <div class="overlay">
+                                    <span class="status planned">Planned</span>
+                                    <h3>Tea Farmer Idle</h3>
+                                    <p>Cultivate your tea farm from a small plot to a thriving 
+                                    plantation. An idle game with relaxing vibes and strategic 
+                                    depth.</p>
+                                    <a href="#" class="btn btn-outline">Coming Soon</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer class="major">
+                    <ul class="actions special">
+                        <li><a href="projects.html" class="button">View All Projects</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </section>
+
+        <!-- Skills & Tech Section -->
+        <section id="skills" class="spotlight style2 right">
+            <span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+            <div class="content">
+                <header>
+                    <h2>Skills & Technologies</h2>
+                    <p>The tools behind the creations</p>
+                </header>
+                
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>SQLite</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>C</span>
+                    </div>
+                </div>
+                
+                <ul class="actions" style="margin-top: 2rem;">
+                    <li><a href="about.html" class="button">More About Me</a></li>
+                </ul>
+            </div>
+            <a href="#pixel-art" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- Pixel Art Showcase -->
+        <section id="pixel-art" class="spotlight style3 left">
+            <span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+            <div class="content">
+                <header>
+                    <h2>Pixel Art</h2>
+                    <p>Digital art one pixel at a time</p>
+                </header>
+                <p>Beyond code, there's a love for visual creation. Pixel art combines 
+                technical precision with artistic expression - the perfect medium for 
+                a developer who loves games. Check out the gallery for original 
+                creations and game assets.</p>
+                <ul class="actions">
+                    <li><a href="projects.html#pixel-art" class="button">View Gallery</a></li>
+                </ul>
+            </div>
+            <a href="#partners" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- Partners / Collaborations (Future) -->
+        <section id="partners" class="partners-section">
+            <div class="container">
+                <header style="text-align: center; margin-bottom: 2rem;">
+                    <h3 style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 3px; font-size: 0.9rem;">
+                        Collaborations & Tools
+                    </h3>
+                </header>
+                <div class="partners-track">
+                    <!-- Partner/tool logos will go here -->
+                    <!-- Placeholder for now - add real logos later -->
+                    <img src="images/partners/firebase-logo.svg" alt="Firebase" />
+                    <img src="images/partners/godot-logo.svg" alt="Godot" />
+                    <img src="images/partners/cs50-logo.svg" alt="CS50" />
+                    <!-- Duplicate for seamless scroll -->
+                    <img src="images/partners/firebase-logo.svg" alt="Firebase" />
+                    <img src="images/partners/godot-logo.svg" alt="Godot" />
+                    <img src="images/partners/cs50-logo.svg" alt="CS50" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews / Testimonials (Future) -->
+        <section id="reviews" class="wrapper style1 special fade-up">
+            <div class="container">
+                <header class="major">
+                    <h2>What People Say</h2>
+                    <p>Reviews and feedback from players and collaborators</p>
+                </header>
+                
+                <div class="box alt">
+                    <div class="row gtr-uniform">
+                        <div class="col-4 col-12-medium">
+                            <div class="glass-card" style="text-align: center;">
+                                <i class="fas fa-quote-left" style="font-size: 2rem; opacity: 0.3; margin-bottom: 1rem;"></i>
+                                <p style="font-style: italic; color: var(--text-secondary);">
+                                    "Coming soon - player reviews and feedback will appear here 
+                                    as games launch and grow."
+                                </p>
+                                <span style="color: var(--text-muted);">— Future Player</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <div class="glass-card" style="text-align: center;">
+                                <i class="fas fa-quote-left" style="font-size: 2rem; opacity: 0.3; margin-bottom: 1rem;"></i>
+                                <p style="font-style: italic; color: var(--text-secondary);">
+                                    "Space reserved for testimonials from collaborators 
+                                    and partners."
+                                </p>
+                                <span style="color: var(--text-muted);">— Future Collaborator</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <div class="glass-card" style="text-align: center;">
+                                <i class="fas fa-quote-left" style="font-size: 2rem; opacity: 0.3; margin-bottom: 1rem;"></i>
+                                <p style="font-style: italic; color: var(--text-secondary);">
+                                    "Your review could be here! Play our games and 
+                                    share your thoughts."
+                                </p>
+                                <span style="color: var(--text-muted);">— You?</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="cta-section">
+            <div class="container">
+                <header>
+                    <h2>Let's Create Something Together</h2>
+                    <p>Have an idea? Want to collaborate? Looking for a partnership?<br />
+                    I'd love to hear from you.</p>
+                </header>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                    <a href="projects.html" class="btn btn-outline">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+                    <li><a href="mailto:hello@cappystudios.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                
+                <div class="footer-links" style="margin: 2rem 0;">
+                    <a href="index.html">Home</a> · 
+                    <a href="projects.html">Projects</a> · 
+                    <a href="about.html">About</a> · 
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <ul class="copyright">
+                    <li>&copy; 2025 Cappy Studios. All rights reserved.</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom/cappy.js"></script>
+
+</body>
+</html>

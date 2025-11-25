@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Projects | Cappy Studios</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Browse all Cappy Studios projects - games, web apps, and pixel art creations." />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-logo">CAPPY STUDIOS</div>
+    </div>
+
+    <!-- Ripple Effect Canvas -->
+    <canvas id="ripple-canvas"></canvas>
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="index.html">Cappy Studios</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                        <ul>
+                            <li><a href="#games">Games</a></li>
+                            <li><a href="#websites">Websites & Apps</a></li>
+                            <li><a href="#pixel-art">Pixel Art</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="button primary">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <div id="main" class="wrapper style1">
+            <div class="container">
+
+                <!-- Page Header -->
+                <header class="major" style="text-align: center; margin-bottom: 4rem;">
+                    <h2>Projects</h2>
+                    <p>Games, web apps, and creative works</p>
+                </header>
+
+                <!-- Games Section -->
+                <section id="games" style="margin-bottom: 5rem;">
+                    <header style="margin-bottom: 2rem;">
+                        <h3 style="display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-gamepad" style="color: var(--accent-purple);"></i>
+                            Games
+                        </h3>
+                        <p style="color: var(--text-secondary);">From web-based classics to narrative adventures</p>
+                    </header>
+
+                    <div class="row gtr-uniform">
+                        
+                        <!-- Snake-50 -->
+                        <div class="col-6 col-12-small">
+                            <div class="glass-card">
+                                <div class="game-card" style="margin-bottom: 1.5rem;">
+                                    <img src="images/games/snake-50-preview.svg" alt="Snake-50" />
+                                    <div class="overlay">
+                                        <span class="status live">Live</span>
+                                    </div>
+                                </div>
+                                <h4>Snake-50</h4>
+                                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                                    A modern take on the classic snake game featuring multiple game modes, 
+                                    user authentication, global leaderboards, and responsive design. 
+                                    Built with vanilla JavaScript and Firebase.
+                                </p>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">JavaScript</span>
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">Firebase</span>
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">HTML5 Canvas</span>
+                                </div>
+                                <a href="#" class="button primary small">Play Now</a>
+                                <a href="#" class="button small">View Code</a>
+                            </div>
+                        </div>
+
+                        <!-- Once I Was a Crybaby -->
+                        <div class="col-6 col-12-small">
+                            <div class="glass-card">
+                                <div class="game-card" style="margin-bottom: 1.5rem;">
+                                    <img src="images/games/crybaby-preview.svg" alt="Once I Was a Crybaby" />
+                                    <div class="overlay">
+                                        <span class="status development">In Development</span>
+                                    </div>
+                                </div>
+                                <h4>Once I Was a Crybaby</h4>
+                                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                                    A narrative-driven adventure game built with Godot Engine. 
+                                    Deep story-focused experience developed in collaboration with 
+                                    a CS master partner. Currently in story writing phase.
+                                </p>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">Godot</span>
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">GDScript</span>
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">Narrative</span>
+                                </div>
+                                <a href="#" class="button small">Follow Progress</a>
+                            </div>
+                        </div>
+
+                        <!-- Trucker Idle -->
+                        <div class="col-6 col-12-small">
+                            <div class="glass-card">
+                                <div class="game-card" style="margin-bottom: 1.5rem;">
+                                    <img src="images/games/trucker-idle-preview.svg" alt="Trucker Idle" />
+                                    <div class="overlay">
+                                        <span class="status planned">Planned</span>
+                                    </div>
+                                </div>
+                                <h4>Trucker Idle</h4>
+                                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                                    An idle/incremental game where you build your trucking empire 
+                                    from scratch. Plan routes, upgrade vehicles, hire drivers, and 
+                                    watch your logistics business grow.
+                                </p>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">Idle Game</span>
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">Web</span>
+                                </div>
+                                <span style="color: var(--text-muted);">Coming Soon</span>
+                            </div>
+                        </div>
+
+                        <!-- Tea Farmer Idle -->
+                        <div class="col-6 col-12-small">
+                            <div class="glass-card">
+                                <div class="game-card" style="margin-bottom: 1.5rem;">
+                                    <img src="images/games/tea-farmer-preview.svg" alt="Tea Farmer Idle" />
+                                    <div class="overlay">
+                                        <span class="status planned">Planned</span>
+                                    </div>
+                                </div>
+                                <h4>Tea Farmer Idle</h4>
+                                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                                    Cultivate your tea farm from a small plot to a thriving plantation. 
+                                    A relaxing idle game with strategic depth, featuring different 
+                                    tea varieties and seasonal mechanics.
+                                </p>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">Idle Game</span>
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">Relaxing</span>
+                                </div>
+                                <span style="color: var(--text-muted);">Coming Soon</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Websites & Apps Section -->
+                <section id="websites" style="margin-bottom: 5rem;">
+                    <header style="margin-bottom: 2rem;">
+                        <h3 style="display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-globe" style="color: var(--accent-pink);"></i>
+                            Websites & Apps
+                        </h3>
+                        <p style="color: var(--text-secondary);">Web applications and tools</p>
+                    </header>
+
+                    <div class="row gtr-uniform">
+                        
+                        <!-- This Website -->
+                        <div class="col-6 col-12-small">
+                            <div class="glass-card">
+                                <div class="game-card" style="margin-bottom: 1.5rem;">
+                                    <img src="images/cappy-studios-preview.svg" alt="Cappy Studios Website" />
+                                    <div class="overlay">
+                                        <span class="status live">Live</span>
+                                    </div>
+                                </div>
+                                <h4>Cappy Studios Website</h4>
+                                <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                                    The website you're looking at right now! Built with HTML5, CSS3, 
+                                    and JavaScript. Features glassmorphism design, ripple effects, 
+                                    and smooth animations.
+                                </p>
+                                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">HTML5</span>
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">CSS3</span>
+                                    <span style="padding: 0.25rem 0.75rem; background: var(--glass-bg); border-radius: 50px; font-size: 0.8rem;">JavaScript</span>
+                                </div>
+                                <a href="#" class="button small">View Code</a>
+                            </div>
+                        </div>
+
+                        <!-- Future Project Placeholder -->
+                        <div class="col-6 col-12-small">
+                            <div class="glass-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 400px; text-align: center;">
+                                <i class="fas fa-plus" style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 1rem; opacity: 0.5;"></i>
+                                <h4 style="color: var(--text-muted);">More Coming Soon</h4>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                                    New web apps and tools are always in the works
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Pixel Art Section -->
+                <section id="pixel-art">
+                    <header style="margin-bottom: 2rem;">
+                        <h3 style="display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-paint-brush" style="color: var(--accent-blue);"></i>
+                            Pixel Art Gallery
+                        </h3>
+                        <p style="color: var(--text-secondary);">Digital art, one pixel at a time</p>
+                    </header>
+
+                    <div class="pixel-gallery">
+                        <!-- Placeholder pixel art items - replace with your actual work -->
+                        <div class="glass-card pixel-item">
+                            <img src="images/pixel-art/art-01.svg" alt="Pixel Art 1" />
+                        </div>
+                        <div class="glass-card pixel-item">
+                            <img src="images/pixel-art/art-02.svg" alt="Pixel Art 2" />
+                        </div>
+                        <div class="glass-card pixel-item">
+                            <img src="images/pixel-art/art-03.svg" alt="Pixel Art 3" />
+                        </div>
+                        <div class="glass-card pixel-item">
+                            <img src="images/pixel-art/art-04.svg" alt="Pixel Art 4" />
+                        </div>
+                        <div class="glass-card pixel-item">
+                            <img src="images/pixel-art/art-05.svg" alt="Pixel Art 5" />
+                        </div>
+                        <div class="glass-card pixel-item">
+                            <img src="images/pixel-art/art-06.svg" alt="Pixel Art 6" />
+                        </div>
+                    </div>
+
+                    <p style="text-align: center; margin-top: 2rem; color: var(--text-muted);">
+                        <i class="fas fa-info-circle"></i> 
+                        Gallery coming soon - pixel art in progress!
+                    </p>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+                    <li><a href="mailto:hello@cappystudios.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                
+                <div class="footer-links" style="margin: 2rem 0;">
+                    <a href="index.html">Home</a> · 
+                    <a href="projects.html">Projects</a> · 
+                    <a href="about.html">About</a> · 
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <ul class="copyright">
+                    <li>&copy; 2025 Cappy Studios. All rights reserved.</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom/cappy.js"></script>
+
+</body>
+</html>
