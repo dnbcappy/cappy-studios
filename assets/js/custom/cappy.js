@@ -50,9 +50,11 @@
                     const isInteractive = target && (
                         target.closest('.glass-card') ||
                         target.closest('.game-card') ||
+                        target.closest('.pixel-item') ||
                         target.closest('button') ||
                         target.closest('a') ||
-                        target.closest('input')
+                        target.closest('input') ||
+                        target.closest('img')
                     );
                     
                     if (!isInteractive) {
@@ -70,9 +72,9 @@
                 x: x,
                 y: y,
                 radius: 0,
-                maxRadius: 80 + Math.random() * 40,
+                maxRadius: 100 + Math.random() * 50,
                 opacity: 0.3,
-                speed: 2 + Math.random()
+                speed: 1.2 + Math.random() * 0.6
             });
             
             // Limit ripples for performance
@@ -86,7 +88,7 @@
             
             this.ripples.forEach((ripple, index) => {
                 ripple.radius += ripple.speed;
-                ripple.opacity -= 0.008;
+                ripple.opacity -= 0.006;
                 
                 if (ripple.opacity <= 0) {
                     this.ripples.splice(index, 1);
