@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="preview-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9333ea"/>
+      <stop offset="50%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <text x="600" y="280" font-family="Arial Black, sans-serif" font-size="72" fill="url(#preview-grad)" text-anchor="middle" font-weight="bold">CAPPY STUDIOS</text>
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="24" fill="#666" text-anchor="middle">There is Value in Every Idea</text>
+</svg>
