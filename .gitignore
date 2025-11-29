@@ -16,3 +16,7 @@ Thumbs.db
 # Environment
 .env
 .env.local
+
+# Setup docs with sensitive information
+SETUP-*.md
+**/SETUP-*.md
