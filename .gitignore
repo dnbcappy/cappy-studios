@@ -20,3 +20,6 @@ Thumbs.db
 # Setup docs with sensitive information
 SETUP-*.md
 **/SETUP-*.md
+
+# Claude Code
+.claude/
