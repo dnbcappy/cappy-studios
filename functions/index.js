@@ -2,8 +2,14 @@ const functions = require('firebase-functions');
 const {onRequest} = require('firebase-functions/v2/https');
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
-// CORS restricted to production domain (use {origin: true} for local testing)
-const cors = require('cors')({origin: 'https://cappystudios.dev'});
+// CORS restricted to production domains
+const cors = require('cors')({
+  origin: [
+    'https://cappystudios.dev',
+    'https://cappy-studios.web.app',
+    'https://cappy-studios.firebaseapp.com'
+  ]
+});
 
 admin.initializeApp();
 
