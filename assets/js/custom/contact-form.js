@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         try {
             // Send to Firebase Cloud Function
-            const response = await fetch('https://us-central1-cappy-studios.cloudfunctions.net/submitContactForm', {
+            const response = await fetch('https://submitcontactform-cgelub3v5a-uc.a.run.app', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
