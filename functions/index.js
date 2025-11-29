@@ -6,6 +6,7 @@ const nodemailer = require('nodemailer');
 const cors = require('cors')({
   origin: [
     'https://cappystudios.dev',
+    'https://www.cappystudios.dev',
     'https://cappy-studios.web.app',
     'https://cappy-studios.firebaseapp.com'
   ]
