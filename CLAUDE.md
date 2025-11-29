@@ -93,25 +93,7 @@ cappy-studios/
 
 ## Deployment
 
-### Live Site
-- **URL**: https://cappy-studios.web.app
-- **Custom Domain**: cappystudios.dev (when configured)
-- **Firebase Project**: cappy-studios
-
-### Quick Deploy Commands
-
-```bash
-# Deploy everything (hosting + functions)
-firebase deploy
-
-# Deploy only the website (faster for HTML/CSS/JS changes)
-firebase deploy --only hosting
-
-# Deploy only Cloud Functions (for backend changes)
-firebase deploy --only functions
-```
-
-### Firebase Setup (First Time Only)
+### Firebase Setup
 ```bash
 # Install Firebase CLI
 npm install -g firebase-tools
@@ -119,126 +101,22 @@ npm install -g firebase-tools
 # Login
 firebase login
 
-# Initialize (already done, but for reference)
+# Initialize (select Hosting)
 firebase init
+
+# Deploy
+firebase deploy
 ```
 
-### Deployment Workflow
-
-1. **Make your changes** to HTML/CSS/JS or functions code
-2. **Test locally** (optional but recommended)
-   ```bash
-   npx serve
-   # or
-   python -m http.server 8000
-   ```
-3. **Update CHANGELOG.md** with changes (add to `[Unreleased]` section)
-4. **Commit to git**
-   ```bash
-   git add .
-   git commit -m "Description of changes"
-   git push origin master
-   ```
-5. **Deploy to Firebase**
-   ```bash
-   firebase deploy
-   ```
-
-### Contact Form Cloud Function
-
-The contact form uses a Firebase Gen 2 Cloud Function that:
-- Receives form submissions via POST request
-- Validates input and sanitizes against XSS
-- Sends email notifications via nodemailer (Gmail)
-- Uses Firebase Secrets Manager for credentials
-
-**Current Function URL**: `https://submitcontactform-cgelub3v5a-uc.a.run.app`
-
-**Important**: If you redeploy functions and the URL changes, update `assets/js/custom/contact-form.js` line 31 with the new URL from the deployment output.
-
-### Secrets Management
-
-Gmail credentials are stored in Firebase Secrets Manager (NOT in code):
-- `GMAIL_EMAIL` - Email address for sending contact form notifications
-- `GMAIL_PASSWORD` - Gmail app password
-
-These are automatically available when deploying from any authenticated device.
-
-To update secrets:
-```bash
-firebase functions:secrets:set GMAIL_EMAIL
-firebase functions:secrets:set GMAIL_PASSWORD
-```
-
-### File Structure for Deployment
-
-**What's deployed:**
-- All HTML files (index.html, projects.html, about.html, contact.html)
-- `assets/` folder (CSS, JS, images)
-- `functions/` folder (Cloud Function code)
-
-**What's ignored:**
-- `.firebase/` (build cache)
-- `node_modules/` (installed during deployment)
-- `.git/`, `.claude/` (dev files)
-- `CLAUDE.md`, `CHANGELOG.md` (documentation)
-
-### Common Deployment Issues
-
-**Issue**: Function URL changed after deployment
-- **Cause**: Firebase Gen 2 functions use different URL format
-- **Fix**: Update the fetch URL in `assets/js/custom/contact-form.js`
-- **Look for**: Deployment output shows new URL
-
-**Issue**: Functions package.json outdated warning
-- **Warning**: `firebase-functions` version outdated
-- **Impact**: Non-critical, functions still work
-- **Fix** (when ready):
-  ```bash
-  cd functions
-  npm install --save firebase-functions@latest
-  cd ..
-  firebase deploy --only functions
-  ```
-
-**Issue**: Can't deploy from new device
-- **Cause**: Not logged into Firebase CLI
-- **Fix**: Run `firebase login` first
-
-**Issue**: Secrets not found
-- **Cause**: Gmail credentials not set in Firebase Secrets Manager
-- **Fix**: Set secrets using `firebase functions:secrets:set`
-
-### Firebase Config Files
-
-**firebase.json** - Main config
+### Firebase Config (firebase.json)
 ```json
 {
-  "functions": {
-    "source": "functions"
-  },
   "hosting": {
     "public": ".",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "headers": [
-      {
-        "source": "**",
-        "headers": [
-          {"key": "X-Frame-Options", "value": "DENY"},
-          {"key": "X-Content-Type-Options", "value": "nosniff"},
-          {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"}
-        ]
-      }
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "CLAUDE.md"],
+    "rewrites": [
+      { "source": "**", "destination": "/index.html" }
     ]
-  }
-}
-```
-
-**.firebaserc** - Project ID
-```json
-{
-  "projects": {
-    "default": "cappy-studios"
   }
 }
 ```
@@ -282,18 +160,15 @@ npx csso assets/css/custom.css -o assets/css/custom.min.css
 
 ## Future Enhancements
 
-- [x] Add actual form submission (Firebase Functions or Formspree) - ✅ DONE (v1.1.0)
-- [x] Add security headers for production - ✅ DONE (v1.1.0)
+- [ ] Add actual form submission (Firebase Functions or Formspree)
 - [ ] Implement image lazy loading
 - [ ] Add dark/light mode toggle (currently dark only)
+- [ ] Connect Snake-50 with direct link (done 28/11)
 - [ ] Add blog/devlog section
 - [ ] Implement game embed previews
 - [ ] Add Ko-fi or support button
-- [ ] SEO optimization (meta tags, Open Graph, structured data)
-- [ ] Analytics integration (Google Analytics or privacy-focused alternative)
-- [ ] Performance optimization (minify CSS/JS, compress images)
-- [ ] PWA support (service worker, offline capability)
-- [ ] Upgrade firebase-functions to latest version
+- [ ] SEO optimization
+- [ ] Analytics integration
 
 ## Notes for Claude
 
