@@ -184,3 +184,9 @@ npx csso assets/css/custom.css -o assets/css/custom.min.css
 - Email: hello@cappystudios.com (placeholder - update when domain active)
 - Location: Belgium
 - Social links: Update href="#" with actual links when ready
+
+## Security & Compliance TODO (new 30/11)
+- Add rate limiting to contact form Cloud Function (prevent spam/abuse)
+- Consider reCAPTCHA integration for form protection
+- Review GDPR requirements: privacy policy for contact form data collection
+- Check if cookie consent banner needed (depends on analytics/tracking usage)
