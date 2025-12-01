@@ -8,7 +8,7 @@ Personal portfolio and studio website showcasing games, web apps, and creative p
 
 ## 🚀 Live Site
 
-Coming soon at [cappystudios.com](#)
+[https://cappystudios.dev](https://cappystudios.dev)
 
 ## ✨ Features
 
