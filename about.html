@@ -29,6 +29,10 @@
     <!-- Theme Color -->
     <meta name="theme-color" content="#0a0a0a" />
 
+    <!-- Preload Critical CSS -->
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/css/custom.css" as="style">
+
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -74,7 +78,7 @@
                     <div class="about-hero">
                         <div class="image-container">
                             <!-- Replace with your photo -->
-                            <img src="images/about-photo.svg" alt="Dylan - Cappy Studios" style="width: 100%; border-radius: 20px;" />
+                            <img src="images/about-photo.svg" alt="Dylan - Cappy Studios" style="width: 100%; border-radius: 20px;" loading="lazy" />
                         </div>
                         <div class="content">
                             <span class="tagline" style="display: inline-block; margin-bottom: 1rem;">The Creator</span>
@@ -205,7 +209,7 @@
                 <section class="glass-card" style="margin-bottom: 3rem;">
                     <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
                         <div style="flex: 0 0 auto;">
-                            <img src="images/cs50-badge.svg" alt="CS50 Certificate" style="width: 120px; height: 120px; border-radius: 15px;" />
+                            <img src="images/cs50-badge.svg" alt="CS50 Certificate" style="width: 120px; height: 120px; border-radius: 15px;" loading="lazy" />
                         </div>
                         <div style="flex: 1;">
                             <h4 style="margin-bottom: 0.5rem;">CS50 Certified</h4>
