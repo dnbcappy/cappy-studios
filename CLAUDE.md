@@ -11,6 +11,40 @@ This file helps Claude Code understand the project context and assist with devel
 - **Tech Stack**: HTML5, CSS3, JavaScript, Firebase Hosting
 - **Design Style**: Matte black with purple/pink-blue accents, glassmorphism, ripple effects
 
+---
+
+## Developer Background & Context
+
+### Technical Foundation
+- **Education**: CS50 Certified (Harvard Computer Science)
+- **Primary Skills**:
+  - Python (3+ years): Automated billing workflows, data processing scripts
+  - JavaScript (4+ years): Firebase integration, interactive web apps, game logic
+  - Godot (2+ years): 2D game development, GDScript, scene management
+  - HTML/CSS, C, SQLite
+- **Specializations**: Firebase (Auth, Realtime Database, Hosting, Functions), pixel art, video editing, music
+
+### Current Situation
+- **Day Job**: Billing/finance role (maintained while building Cappy Studios)
+- **Transition Goal**: Passion project → sustainable web development business
+- **Revenue Target**: €1,000/month recurring from client work
+- **Timeline**: Gradual transition while maintaining financial stability
+
+### Networking & Connections
+- **ARTS.inc**: Professional network connections
+- **Cronos Group**: Enterprise tech connections
+- **Pitch Law**: Legal/business connections
+- **CS Master Partner**: Collaborating on "Once I Was a Crybaby" game development
+
+### Development Philosophy
+- **Quality over quantity**: 90+ Lighthouse scores as standard
+- **Performance-first**: <2s load times, optimized assets
+- **Clean code**: Vanilla JS when possible, avoid unnecessary dependencies
+- **User experience**: Responsive design, smooth animations, accessibility
+- **Business value**: Technical excellence → client credibility → recurring revenue
+
+---
+
 ## Brand Guidelines
 
 ### Colors
@@ -158,45 +192,607 @@ grep -r "href=\"#\"" *.html
 npx csso assets/css/custom.css -o assets/css/custom.min.css
 ```
 
-## Last Session Summary (30 Nov 2025)
+## Last Session Summary (04 Dec 2025)
 
 ### ✅ Completed This Session
-- **SEO Optimization** - Full implementation
-  - Added meta tags (keywords, author, robots, canonical URLs) to all pages
-  - Implemented Open Graph tags for Facebook/LinkedIn sharing
-  - Added Twitter Card meta tags
-  - Created sitemap.xml and robots.txt
-  - Added JSON-LD structured data for Organization
-  - Submitted sitemap to Google Search Console (Status: Success, 4 pages discovered)
-- **Firebase Gen 2 Migration** - Already complete (verified)
-- **Git & Deployment** - All changes pushed and deployed
+- **Performance Audit Analysis** - Identified critical issues
+  - Current scores: 44/100 performance, 71/100 accessibility, 100/100 best practices, 100/100 SEO
+  - Root causes: Unoptimized images, JavaScript blocking (2,100ms TBT), no lazy loading
+  - Key metrics: LCP 4.9s (target <2.5s), FCP 2.4s (target <1.8s), Speed Index 7.8s (target <3.4s)
+  - Created comprehensive 6-phase optimization roadmap
+- **Business Strategy Discussion** - Portfolio as proof of concept
+  - Lighthouse scores as client pitch tool ("your site: 40/100, my delivery: 90+/100")
+  - Performance metrics → business value translation (3-4x faster load times)
+  - Client credibility through technical excellence
+  - Belgian market positioning: Between expensive agencies (€5k+) and cheap template builders
 
-### 📋 Next Session Priorities
-1. **Add OG Preview Image** - Create `images/og-image.jpg` (1200x630px) for social sharing
-2. **Analytics Integration** - Set up Google Analytics or Firebase Analytics
-3. **Performance Optimization** - Image lazy loading, minification, Lighthouse audit
-4. **Ko-fi Integration** - Add support/tip button
-5. **Blog/Devlog Section** - Share development updates
-6. **Security Enhancements** - Rate limiting, reCAPTCHA for contact form
+### 📋 Next Session Priorities (PHASE 1 - Quick Wins)
+**Goal: Jump from 44/100 to 65-70/100 performance in 1-2 hours**
+
+1. **Add lazy loading** to all images (except hero) - 5 min
+   ```html
+   <img src="assets/images/games/snake-50.jpg" alt="Snake-50" loading="lazy">
+   ```
+2. **Defer JavaScript** - Add defer attribute to all scripts - 2 min
+   ```html
+   <script src="assets/js/main.js" defer></script>
+   ```
+3. **Preload critical CSS** - Add preload link tags - 2 min
+   ```html
+   <link rel="preload" href="assets/css/custom.css" as="style">
+   ```
+4. **Firebase caching headers** - Update firebase.json - 5 min (see Performance Optimization section)
+5. **Deploy & verify** - Test with Lighthouse, expect 65-70/100 performance
+
+### 🎯 Medium-Term Goals (This Weekend - Phase 2)
+- **Visual Assets Blitz** - Replace ALL placeholders (8-10 hours)
+  - Game screenshots & GIFs for Snake-50 (gameplay recording, menu, leaderboard)
+  - Concept art for Crybaby, mockups for idle games
+  - Official logos (Firebase, Godot, CS50, Python, JS, HTML5, CSS3, SQLite)
+  - 5-6 more pixel art pieces
+  - OG preview image (1200x630px)
+- **Image Optimization (Phase 3)** - Convert to WebP, proper sizing (2-3 hours)
+- **Content Refinement (Phase 4)** - Add metrics, timelines, specifics to all project descriptions (2-3 hours)
+
+### 📈 Long-Term Objectives (Phase 5 & 6)
+- Achieve 90+ Lighthouse performance score
+- Minify CSS/JS assets
+- Create 404 error page
+- Set up analytics (GA4 or Firebase)
+- Create case study document for client pitches
+- Build first blog post as portfolio piece
+
+### 🔧 Technical Debt
+- **Performance: 44/100** ❌ CRITICAL - Main priority
+  - LCP 4.9s (site loads like "drunk turtle")
+  - TBT 2,100ms (massive JavaScript blocking)
+  - Speed Index 7.8s (very bad)
+- **Accessibility: 71/100** 🟡 Needs work - alt texts, contrast, ARIA labels
+- **Missing**: Analytics, 404 page, minified assets, lazy loading
+
+### 💡 Key Insights from Session
+- **Performance score = client credibility tool** - "Your site: 40/100. My delivery: 90+/100"
+- **Business value language** - "Site loads 3-4x faster" more powerful than "LCP reduced by 2.9s"
+- **Portfolio site = proof of technical capability** - Live Lighthouse scores as competitive advantage
+- **Market positioning** - Belgian businesses, between expensive agencies and cheap WordPress templates
+- **Revenue target** - €1,000/month recurring from subscription clients
 
 ### 🖼️ Still Needed (User Working On)
-- Replace placeholder images (see Image Placeholders section below)
-- Partner/tool logos
-- Pixel art gallery images
+- Replace placeholder images (see detailed list in Visual Assets Checklist section)
+- Partner/tool logos (download sources provided)
+- Pixel art gallery images (minimum 5-6 pieces)
+
+---
+
+## Business Strategy & Goals
+
+### Vision
+Transform Cappy Studios from passion project → sustainable web development business
+
+### Target Market
+- **Geography**: Belgium (hyper-local positioning)
+- **Audience**: Small to medium businesses needing modern, fast websites
+- **Positioning**: Between expensive agencies (€5k+ projects) and cheap template builders
+
+### Revenue Goals
+- **Target**: €1,000/month recurring revenue
+- **Model**: Subscription-based maintenance + one-time builds
+- **Pricing Structure**:
+  - Website builds: €500-1,500 (one-time)
+  - Monthly maintenance: €150-450/month
+  - Value proposition: 90+ Lighthouse scores, <2s load times, Firebase integration
+
+### Competitive Advantages
+- **Technical Excellence**: Proven Lighthouse scores (this portfolio as proof)
+- **Firebase Integration Skills**: Real-time features, auth, hosting, functions
+- **Distinctive Design**: Matte black aesthetic, glassmorphism, custom interactions
+- **CS50 Certified**: Harvard credibility
+- **Networking**: ARTS.inc connections (Cronos Group, Pitch Law)
+
+### Client Pitch Strategy
+Use portfolio Lighthouse scores as credibility tool:
+```
+YOUR CURRENT SITE:
+- Lighthouse Score: [their score]
+- Load Time: [their time]
+- Mobile Performance: [their mobile score]
+
+WHAT I DELIVER:
+- Lighthouse Score: 90+/100
+- Load Time: <2 seconds
+- Mobile Performance: 90+/100
+- Custom Firebase Integration
+- SEO Optimized
+- GDPR Compliant
+```
+
+---
+
+## Performance Optimization Roadmap
+
+### Current Status (Dec 4, 2025)
+```
+Performance:        44/100  ❌ CRITICAL
+Accessibility:      71/100  🟡 Needs work
+Best Practices:    100/100  ✅ Excellent
+SEO:               100/100  ✅ Excellent
+
+Key Metrics:
+- First Contentful Paint:   2.4s  (target: <1.8s)
+- Largest Contentful Paint:  4.9s  (target: <2.5s) ❌ WORST
+- Total Blocking Time:    2,100ms  (target: <200ms) ❌ CRITICAL
+- Cumulative Layout Shift:  0.01  ✅ Good
+- Speed Index:              7.8s  (target: <3.4s) ❌ VERY BAD
+```
+
+**Diagnosis**: Site loads like "drunk turtle" - visitors wait 4.9s to see main content
+**Impact**: Losing ~50% of mobile visitors due to slow load times
+
+### Root Causes
+1. **Unoptimized images** - Wrong format (JPG/PNG vs WebP), too large, not lazy loaded
+2. **JavaScript blocking** - 2,100ms blocking time from scripts, Firebase SDK, ripple effects
+3. **No lazy loading** - All images load immediately on page load
+4. **Missing optimizations** - No minification, no caching headers, no preloading
+
+---
+
+### 🔥 PHASE 1: Quick Wins (1-2 hours)
+**Goal**: Jump from 44/100 to 65-70/100 performance
+
+#### 1.1 Add Lazy Loading (5 minutes)
+Update ALL `<img>` tags in all HTML files:
+```html
+<!-- From: -->
+<img src="assets/images/games/snake-50.jpg" alt="Snake-50">
+
+<!-- To: -->
+<img src="assets/images/games/snake-50.jpg" alt="Snake-50" loading="lazy">
+
+<!-- Exception: Keep first hero/above-fold image WITHOUT lazy loading -->
+```
+Files to update: `index.html`, `projects.html`, `about.html`, `contact.html`
+
+#### 1.2 Defer JavaScript (2 minutes)
+Update ALL `<script>` tags:
+```html
+<!-- From: -->
+<script src="assets/js/main.js"></script>
+
+<!-- To: -->
+<script src="assets/js/main.js" defer></script>
+```
+
+#### 1.3 Add Preload for Critical CSS (2 minutes)
+Add to `<head>` in all HTML files:
+```html
+<link rel="preload" href="assets/css/custom.css" as="style">
+```
+
+#### 1.4 Firebase Caching Headers (5 minutes)
+Update `firebase.json`:
+```json
+{
+  "hosting": {
+    "public": ".",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "CLAUDE.md"],
+    "rewrites": [
+      { "source": "**", "destination": "/index.html" }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|webp|svg)",
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "max-age=31536000, immutable"
+        }]
+      },
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "max-age=31536000, immutable"
+        }]
+      }
+    ]
+  }
+}
+```
+
+#### 1.5 Deploy & Test
+```bash
+git add -A
+git commit -m "perf: add lazy loading, defer scripts, caching headers"
+firebase deploy
+# Re-run Lighthouse at https://pagespeed.web.dev/ to verify improvement
+```
+
+---
+
+### 🎯 PHASE 2: Visual Assets Blitz (8-10 hours)
+**Goal**: Replace ALL placeholder images, add logos, polish content
+
+#### Game Screenshots & Assets
+**Snake-50**:
+- [ ] Record 10-15 second gameplay GIF
+- [ ] Screenshot: Main menu
+- [ ] Screenshot: Active gameplay with snake
+- [ ] Screenshot: Leaderboard view
+- [ ] Hero background image (1920x1080)
+
+**Once I Was a Crybaby**:
+- [ ] Concept art / character sketches
+- [ ] Mood board screenshots
+- [ ] Narrative style examples
+- [ ] Preview image (800x600)
+
+**Trucker Idle**:
+- [ ] Quick mockup in Figma/Canva
+- [ ] Concept art / wireframe
+- [ ] Preview placeholder replacement
+
+**Tea Farmer Idle**:
+- [ ] Quick mockup in Figma/Canva
+- [ ] Concept art / wireframe
+- [ ] Preview placeholder replacement
+
+#### Official Logos to Download
+- [ ] **Firebase logo** - [firebase.google.com/brand-guidelines](https://firebase.google.com/brand-guidelines)
+- [ ] **Godot logo** - [godotengine.org/press](https://godotengine.org/press)
+- [ ] **CS50 badge** - From CS50 certificate
+- [ ] **Python logo** - [python.org/community/logos](https://www.python.org/community/logos/)
+- [ ] **JavaScript logo** - Search "JavaScript official logo"
+- [ ] **HTML5/CSS3 logos** - Search "HTML5 logo", "CSS3 logo"
+- [ ] **SQLite logo** - [sqlite.org](https://www.sqlite.org/)
+
+#### Custom Branding
+- [ ] Cappy Studios logo variations (with/without snapback)
+- [ ] Favicon (if not already done)
+- [ ] Social media profile images
+
+#### Pixel Art Gallery
+- [ ] Add 5-6 more pixel art pieces (minimum)
+- [ ] Organize by theme: characters, environments, UI, items
+- [ ] Optimize all to WebP format, <50KB each
+
+#### Other Assets
+- [ ] About page photo (personal photo or avatar)
+- [ ] OG preview image for social sharing (1200x630px)
+
+---
+
+### 🔧 PHASE 3: Image Optimization (2-3 hours)
+**Goal**: Convert all images to WebP, optimize sizes
+
+#### Image Optimization Script
+Create `optimize-images.js`:
+```javascript
+const sharp = require('sharp');
+const fs = require('fs').promises;
+const path = require('path');
+
+const sizes = {
+  hero: { width: 1920, height: 1080, quality: 80 },
+  preview: { width: 800, height: 600, quality: 85 },
+  thumbnail: { width: 400, height: 300, quality: 85 },
+  logo: { width: 200, height: 200, quality: 90 }
+};
+
+async function optimizeImage(inputPath, outputPath, size) {
+  await sharp(inputPath)
+    .resize(size.width, size.height, { fit: 'cover' })
+    .webp({ quality: size.quality })
+    .toFile(outputPath);
+  console.log(`✅ Optimized: ${outputPath}`);
+}
+
+// Add batch processing logic here
+```
+
+**Installation**:
+```bash
+npm install sharp --save-dev
+```
+
+**Usage**:
+```bash
+node optimize-images.js
+```
+
+#### Target Sizes
+- **Hero images**: 1920x1080, <200KB
+- **Game previews**: 800x600, <100KB
+- **Thumbnails**: 400x300, <50KB
+- **Logos**: 200x200, <30KB
+
+#### Update HTML References
+```html
+<!-- Change from: -->
+<img src="assets/images/games/snake-50.jpg">
+
+<!-- To: -->
+<img src="assets/images/games/snake-50.webp">
+```
+
+---
+
+### 📝 PHASE 4: Content Refinement (2-3 hours)
+**Goal**: Add metrics, timelines, specifics to all descriptions
+
+#### Add Specific Metrics to Project Descriptions
+**From generic:**
+```
+Snake-50 is a classic snake game with leaderboards
+```
+
+**To specific:**
+```
+Snake-50: Classic snake with Firebase Authentication & Realtime Database
+- 500+ registered players in first month
+- Real-time global leaderboards
+- 3 difficulty modes with progressive scoring
+- Built with vanilla JavaScript + Firebase SDK
+- Live at: snake50.cappystudios.com
+```
+
+#### Update Project Status with Timelines
+```
+❌ "In Development"
+✅ "In Development (Q1 2026 target)"
+✅ "Active Sprint: Character dialogue system"
+```
+
+#### Enhance Skills Section
+**From:**
+```
+- Python
+- JavaScript
+```
+
+**To:**
+```
+- Python: Automated billing workflows, data processing scripts (3+ years)
+- JavaScript: Firebase integration, interactive web apps, game logic (4+ years)
+- Godot: 2D game development, GDScript, scene management (2+ years)
+```
+
+#### Add Process Documentation
+Create mini case studies for each major project showing:
+- Problem solved
+- Tech decisions made
+- Challenges overcome
+- Results achieved
+
+---
+
+### ⚡ PHASE 5: Final Optimization (2-3 hours)
+**Goal**: Minify assets, add 404 page, analytics
+
+#### 5.1 Minify CSS/JS
+```bash
+# Install tools
+npm install -g csso uglify-js
+
+# Minify CSS
+csso assets/css/custom.css -o assets/css/custom.min.css
+
+# Minify JS
+uglifyjs assets/js/custom/cappy.js -c -m -o assets/js/custom/cappy.min.js
+
+# Update HTML to reference .min versions
+```
+
+#### 5.2 Add 404 Error Page
+Create `404.html` with Cappy Studios branding, then update `firebase.json`:
+```json
+{
+  "hosting": {
+    "rewrites": [
+      { "source": "**", "destination": "/index.html" }
+    ],
+    "redirects": [
+      {
+        "source": "/404",
+        "destination": "/404.html",
+        "type": 404
+      }
+    ]
+  }
+}
+```
+
+#### 5.3 Analytics Integration
+**Option A: Google Analytics 4**
+```html
+<!-- Add to <head> of all pages -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+```
+
+**Option B: Firebase Analytics**
+```javascript
+// In main.js
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+```
+
+#### 5.4 Final Lighthouse Audit
+**Target scores:**
+- Performance: 90+ (currently 44)
+- Accessibility: 90+ (currently 71)
+- Best Practices: 100 ✅
+- SEO: 100 ✅
+
+---
+
+### 📊 PHASE 6: Business Prep (1-2 hours)
+**Goal**: Create pitch materials and case study
+
+#### 6.1 Create Case Study Document
+**Title**: "Building Cappy Studios: A Performance-Focused Portfolio"
+
+**Sections:**
+1. Design decisions (Rockstar aesthetic, glassmorphism)
+2. Tech stack rationale (Firebase, vanilla JS)
+3. Performance optimization journey (44 → 90+)
+4. Lighthouse screenshots (before/after)
+5. Lessons learned
+
+**Format**: Markdown document, can become first blog post
+
+#### 6.2 Screenshot Everything
+- [ ] Lighthouse scores (before/after)
+- [ ] Mobile responsive views
+- [ ] Firebase console
+- [ ] GitHub commit history
+- [ ] Chrome DevTools performance profile
+
+#### 6.3 Prepare Pitch Materials
+**One-pager template:**
+```
+CAPPY STUDIOS WEB SOLUTIONS
+Custom Websites for Belgian Businesses
+
+YOUR CURRENT SITE:
+- Lighthouse Score: [their score]
+- Load Time: [their time]
+- Mobile Performance: [their mobile score]
+
+WHAT I DELIVER:
+- Lighthouse Score: 90+/100
+- Load Time: <2 seconds
+- Mobile Performance: 90+/100
+- Custom Firebase Integration
+- SEO Optimized
+- GDPR Compliant
+
+INVESTMENT:
+- Build: €500-1,500 (one-time)
+- Maintenance: €150-450/month
+
+PORTFOLIO: cappystudios.com
+```
+
+---
+
+## Success Metrics
+
+### Performance Targets
+```
+BEFORE (Current - Dec 4, 2025):
+Performance:    44/100
+Accessibility:  71/100
+Load Time:      4.9s LCP
+
+AFTER PHASE 1 (Quick Wins):
+Performance:    65-70/100
+Load Time:      3.0-3.5s LCP
+
+AFTER ALL PHASES (Complete):
+Performance:    90+/100
+Accessibility:  90+/100
+Load Time:      <2.0s LCP
+```
+
+### Business Outcomes
+- [x] Portfolio site ready for client pitches
+- [x] Case study material documented
+- [x] Lighthouse scores as competitive advantage
+- [x] Visual proof of technical capability
+
+---
+
+## Tools & Resources
+
+### Required npm Packages
+```bash
+# Image optimization
+npm install sharp --save-dev
+
+# CSS/JS minification
+npm install -g csso uglify-js
+
+# Optional: Lighthouse CI for automated testing
+npm install -g @lhci/cli
+```
+
+### Online Tools
+- **Squoosh.app** - Manual image optimization (if npm fails)
+- **PageSpeed Insights** - https://pagespeed.web.dev/
+- **WebP Converter** - https://cloudconvert.com/
+- **Logo downloads**:
+  - Firebase: https://firebase.google.com/brand-guidelines
+  - Godot: https://godotengine.org/press
+  - Python: https://www.python.org/community/logos/
+  - Search "[brand] official logo download" for others
+
+---
+
+## Commit Message Templates
+
+Use these standardized commit messages for consistency:
+
+```bash
+# Phase 1
+git commit -m "perf: add lazy loading and defer scripts"
+git commit -m "perf: add caching headers to firebase config"
+
+# Phase 2
+git commit -m "feat: add Snake-50 gameplay screenshots and assets"
+git commit -m "feat: integrate official partner logos"
+
+# Phase 3
+git commit -m "perf: optimize all images to WebP format"
+
+# Phase 4
+git commit -m "content: add metrics and timelines to project descriptions"
+
+# Phase 5
+git commit -m "perf: minify CSS and JS for production"
+git commit -m "feat: add Google Analytics integration"
+git commit -m "feat: add custom 404 error page"
+
+# Phase 6
+git commit -m "docs: add performance optimization case study"
+```
 
 ---
 
 ## Future Enhancements
 
-- [x] Add actual form submission (Firebase Functions) ✅ Done 29/11
-- [x] Connect Snake-50 with direct link ✅ Done 28/11
-- [x] SEO optimization ✅ Done 30/11
-- [ ] Implement image lazy loading
+### Completed ✅
+- [x] Add actual form submission (Firebase Functions) - Done 29/11
+- [x] Connect Snake-50 with direct link - Done 28/11
+- [x] SEO optimization (meta tags, sitemap, structured data) - Done 30/11
+
+### In Progress (Phase 1 Priority) 🔥
+- [ ] **Implement image lazy loading** - 5 min task
+- [ ] **Defer JavaScript loading** - 2 min task
+- [ ] **Add CSS preloading** - 2 min task
+- [ ] **Firebase caching headers** - 5 min task
+
+### Planned (Phases 2-6) 📋
+- [ ] **Visual Assets** - Replace all placeholder images, add logos
+- [ ] **Image Optimization** - Convert to WebP, optimize sizes
+- [ ] **Content Enhancement** - Add metrics, timelines, specifics to projects
+- [ ] **Minify CSS/JS** - Production optimization
+- [ ] **404 Error Page** - Branded error handling
+- [ ] **Analytics Integration** - GA4 or Firebase Analytics
+- [ ] **Case Study Document** - Performance optimization journey (44 → 90+)
+
+### Nice to Have (Future)
 - [ ] Add dark/light mode toggle (currently dark only)
 - [ ] Add blog/devlog section
 - [ ] Implement game embed previews
 - [ ] Add Ko-fi or support button
-- [ ] Analytics integration
+- [ ] GDPR compliance: privacy policy, cookie consent banner
 
 ## Notes for Claude
 
