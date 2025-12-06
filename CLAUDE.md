@@ -192,9 +192,32 @@ grep -r "href=\"#\"" *.html
 npx csso assets/css/custom.css -o assets/css/custom.min.css
 ```
 
-## Last Session Summary (04 Dec 2025 - EVENING SESSION)
+## Last Session Summary (06 Dec 2025)
 
-### 🎉 MAJOR VICTORY - PHASE 1A COMPLETE!
+### Logo Revert
+
+**Reverted logo branding** - User didn't like the logo after all.
+
+**What was removed:**
+- Deleted logo files: `logo-colored.png/svg`, `logo-transparent.png/svg`
+- Removed favicon links from all 5 HTML pages
+- Removed logo from page loaders, headers, and footers
+- Removed ~70 lines of logo CSS from custom.css
+- Reverted structured data logo path to `logo.png`
+
+**What was preserved:**
+- Text-based "CAPPY STUDIOS" in loader
+- Text-based "Cappy Studios" in header
+- All performance optimizations (99/100 score)
+- GA4 tracking, caching, lazy loading
+
+**Commit**: `d8e3aa1` - Deployed to https://cappy-studios.web.app
+
+---
+
+## Previous Session (04 Dec 2025 - EVENING SESSION)
+
+### PHASE 1A COMPLETE!
 
 **LIGHTHOUSE RESULTS - INCREDIBLE SUCCESS:**
 
