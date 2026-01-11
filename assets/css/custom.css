@@ -134,6 +134,11 @@ body {
     background-image: none !important;
 }
 
+/* Fix circular image positioning */
+#banner .content .image img {
+    object-position: center 60%;
+}
+
 /* Kill the template's dark overlay pseudo-element */
 #banner:after {
     display: none !important;
