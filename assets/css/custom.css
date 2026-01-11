@@ -128,54 +128,113 @@ body {
    ============================================ */
 
 #banner {
-    background: var(--bg-primary);
     position: relative;
     overflow: hidden;
+    background: #0a0a0a !important;
+    background-image: none !important;
 }
 
+/* Kill the template's dark overlay pseudo-element */
+#banner:after {
+    display: none !important;
+}
+
+/* Base gradient layer - slow, deep movement */
+#banner:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 20% 30%, rgba(147, 51, 234, 0.25), transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.2), transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.15), transparent 50%);
+    animation: organicFloat 20s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Secondary layer - faster, different pattern */
 .hero-slider {
+    display: block !important;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 70% 20%, rgba(147, 51, 234, 0.2), transparent 35%),
+                radial-gradient(circle at 30% 80%, rgba(59, 130, 246, 0.25), transparent 45%),
+                radial-gradient(circle at 60% 60%, rgba(168, 85, 247, 0.15), transparent 40%);
+    animation: organicDrift 15s cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite reverse;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.8;
 }
 
-.hero-slider .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-slider .slide.active {
-    opacity: 1;
-}
-
-.hero-slider .slide::after {
+/* Tertiary layer - accent pulses that move */
+.hero-slider:after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgba(10, 10, 10, 0.7) 0%,
-        rgba(10, 10, 10, 0.85) 50%,
-        rgba(10, 10, 10, 0.95) 100%
-    );
+    background: radial-gradient(ellipse at 40% 40%, rgba(147, 51, 234, 0.3), transparent 30%),
+                radial-gradient(ellipse at 90% 60%, rgba(59, 130, 246, 0.25), transparent 35%);
+    animation: breathe 8s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    opacity: 0.6;
+}
+
+/* Organic floating animation - natural, alive movement */
+@keyframes organicFloat {
+    0%, 100% {
+        transform: translate(0%, 0%) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(10%, -8%) rotate(3deg) scale(1.05);
+    }
+    50% {
+        transform: translate(-5%, 12%) rotate(-2deg) scale(0.95);
+    }
+    75% {
+        transform: translate(-12%, -5%) rotate(4deg) scale(1.08);
+    }
+}
+
+/* Drifting animation - slower, offset timing */
+@keyframes organicDrift {
+    0%, 100% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+    33% {
+        transform: translate(-15%, 10%) rotate(-5deg);
+    }
+    66% {
+        transform: translate(8%, -15%) rotate(3deg);
+    }
+}
+
+/* Breathing animation - pulsing alive effect */
+@keyframes breathe {
+    0%, 100% {
+        transform: scale(1) translate(0%, 0%);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.15) translate(5%, -5%);
+        opacity: 0.9;
+    }
+}
+
+/* Hero slider disabled - using CSS gradient instead */
+.hero-slider {
+    display: none;
 }
 
 #banner .content {
     position: relative;
-    z-index: 2;
+    z-index: 10; /* Above gradient overlay */
 }
 
 #banner .content header h2 {
@@ -283,8 +342,9 @@ body {
 .game-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: var(--transition-smooth);
+    background: var(--bg-secondary);
 }
 
 .game-card:hover img {
