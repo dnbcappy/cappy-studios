@@ -192,7 +192,64 @@ grep -r "href=\"#\"" *.html
 npx csso assets/css/custom.css -o assets/css/custom.min.css
 ```
 
-## Last Session Summary (06 Dec 2025)
+## Last Session Summary (11 Jan 2026)
+
+### Image Personalization & Hero Background Redesign
+
+**Focus**: Replaced placeholders with real game screenshots and stock images, redesigned hero background with organic animated gradient.
+
+### ✅ Completed This Session
+
+**1. Snake-50 Game Images**
+- Added real Snake-50 screenshots from user's game
+- Preview card: 1V1 gameplay mode (shows multiplayer feature)
+- Hero background: Wide gameplay screenshot (initially)
+- Fixed image zoom with `object-fit: contain` for better visibility
+
+**2. Hero Background Animation - Major Design Upgrade**
+- **Problem discovered**: Template's main.css had hardcoded `banner.jpg` + 95% opacity dark overlay blocking all backgrounds
+- **Solution**: Nuclear CSS override with `!important` flags
+- **Final design**: Replaced image slider with organic 3-layer animated gradient
+  - Layer 1: Slow floating (20s cycle) with translate/rotate/scale
+  - Layer 2: Counter-rotating drift (15s cycle, reverse animation)
+  - Layer 3: Breathing pulse (8s cycle) with opacity shifts
+  - Custom cubic-bezier easing curves for natural, alive movement
+  - Purple/pink/blue glows matching brand colors
+  - 200% canvas size for seamless drift without edge clipping
+
+**3. Section Background Images**
+- `pic01.jpg` → Gaming setup with controller (Hero section circle)
+- `pic02.jpg` → Art gallery wall (About/Vision section)
+- `pic03.jpg` → HTML code with syntax highlighting (Skills section)
+- `pic04.jpg` → Abstract red/pink/blue art - perfect brand color match (Pixel Art section)
+
+**4. Code Cleanup**
+- Removed unused hero-slider CSS (now using pure CSS gradient)
+- Cleaned up conflicting z-index layers
+- Disabled template's blocking pseudo-elements
+
+### 📋 Still Needed (Next Session)
+
+**Logos to download:**
+- Firebase logo (for partners section)
+- Godot logo (for partners section)
+- CS50 badge (for About page certification)
+- Optional: Python, JavaScript, HTML5/CSS3 logos
+
+**Other assets:**
+- Personal photo for About page
+- More pixel art for gallery
+- Social media preview image (og-image.jpg, 1200x630px)
+
+### 🎨 Design Achievements
+
+**Hero background** now feels truly alive - organic, breathing movement that never repeats the same pattern. Three independent layers create depth and complexity while maintaining performance. Perfect alignment with brand aesthetic (purple/pink/blue).
+
+**Deployed**: Multiple deployments throughout session to https://cappy-studios.web.app
+
+---
+
+## Previous Session (06 Dec 2025)
 
 ### Logo Revert
 
