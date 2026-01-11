@@ -70,21 +70,15 @@ body {
    ============================================ */
 
 #header {
-    background-image:
-        linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)),
-        url('../../images/header-bg.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: rgba(10, 10, 10, 0.8) !important;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
 }
 
+body.landing #header,
 #header.alt {
-    background-image:
-        linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.4)),
-        url('../../images/header-bg.jpg');
+    background: transparent !important;
     border-bottom: none;
 }
 
@@ -130,7 +124,7 @@ body {
     left: 0;
 }
 
-/* Fix Contact button vertical alignment */
+/* Contact button vertical alignment */
 #header nav ul li a.button {
     vertical-align: middle;
     margin-top: 0.4em;
@@ -143,11 +137,12 @@ body {
 #banner {
     position: relative;
     overflow: hidden;
-    background: #0a0a0a !important;
-    background-image: none !important;
+    background:
+        linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)),
+        url('../../images/header-bg.jpg') center center / cover no-repeat !important;
 }
 
-/* Fix circular image to fill container properly */
+/* Circular image container - fill and center */
 #banner .content .image img {
     width: 100% !important;
     height: 100% !important;
@@ -155,12 +150,12 @@ body {
     object-position: center center !important;
 }
 
-/* Kill the template's dark overlay pseudo-element */
+/* Disable template's default overlay */
 #banner:after {
     display: none !important;
 }
 
-/* Optimized gradient layer - GPU accelerated */
+/* Animated gradient layer for hero background - subtle overlay */
 #banner:before {
     content: '';
     position: absolute;
@@ -168,30 +163,19 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at 30% 40%, rgba(147, 51, 234, 0.2), transparent 50%),
-                radial-gradient(circle at 70% 60%, rgba(59, 130, 246, 0.18), transparent 50%);
+    background: radial-gradient(circle at 30% 40%, rgba(147, 51, 234, 0.1), transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(59, 130, 246, 0.08), transparent 50%);
     animation: organicFloat 18s ease-in-out infinite;
     z-index: 1;
     pointer-events: none;
     will-change: transform;
 }
 
-/* Secondary pulse layer - simpler, smoother */
+/* Hero slider element - hidden, using CSS gradient instead */
 .hero-slider {
-    display: block !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(ellipse at 50% 50%, rgba(147, 51, 234, 0.15), transparent 60%);
-    animation: breathe 6s ease-in-out infinite;
-    z-index: 2;
-    pointer-events: none;
-    will-change: opacity;
+    display: none !important;
 }
 
-/* Optimized floating - only transform (GPU accelerated) */
 @keyframes organicFloat {
     0%, 100% {
         transform: translate3d(0, 0, 0) rotate(0deg);
@@ -199,21 +183,6 @@ body {
     50% {
         transform: translate3d(8%, -8%, 0) rotate(2deg);
     }
-}
-
-/* Optimized breathing - only opacity (GPU accelerated) */
-@keyframes breathe {
-    0%, 100% {
-        opacity: 0.5;
-    }
-    50% {
-        opacity: 0.8;
-    }
-}
-
-/* Hero slider disabled - using CSS gradient instead */
-.hero-slider {
-    display: none;
 }
 
 #banner .content {
