@@ -139,7 +139,7 @@ body {
     display: none !important;
 }
 
-/* Base gradient layer - slow, deep movement */
+/* Optimized gradient layer - GPU accelerated */
 #banner:before {
     content: '';
     position: absolute;
@@ -147,83 +147,46 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at 20% 30%, rgba(147, 51, 234, 0.25), transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.2), transparent 40%),
-                radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.15), transparent 50%);
-    animation: organicFloat 20s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+    background: radial-gradient(circle at 30% 40%, rgba(147, 51, 234, 0.2), transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(59, 130, 246, 0.18), transparent 50%);
+    animation: organicFloat 18s ease-in-out infinite;
     z-index: 1;
     pointer-events: none;
+    will-change: transform;
 }
 
-/* Secondary layer - faster, different pattern */
+/* Secondary pulse layer - simpler, smoother */
 .hero-slider {
     display: block !important;
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at 70% 20%, rgba(147, 51, 234, 0.2), transparent 35%),
-                radial-gradient(circle at 30% 80%, rgba(59, 130, 246, 0.25), transparent 45%),
-                radial-gradient(circle at 60% 60%, rgba(168, 85, 247, 0.15), transparent 40%);
-    animation: organicDrift 15s cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite reverse;
-    z-index: 2;
-    pointer-events: none;
-    opacity: 0.8;
-}
-
-/* Tertiary layer - accent pulses that move */
-.hero-slider:after {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at 40% 40%, rgba(147, 51, 234, 0.3), transparent 30%),
-                radial-gradient(ellipse at 90% 60%, rgba(59, 130, 246, 0.25), transparent 35%);
-    animation: breathe 8s cubic-bezier(0.42, 0, 0.58, 1) infinite;
-    opacity: 0.6;
+    background: radial-gradient(ellipse at 50% 50%, rgba(147, 51, 234, 0.15), transparent 60%);
+    animation: breathe 6s ease-in-out infinite;
+    z-index: 2;
+    pointer-events: none;
+    will-change: opacity;
 }
 
-/* Organic floating animation - natural, alive movement */
+/* Optimized floating - only transform (GPU accelerated) */
 @keyframes organicFloat {
     0%, 100% {
-        transform: translate(0%, 0%) rotate(0deg) scale(1);
-    }
-    25% {
-        transform: translate(10%, -8%) rotate(3deg) scale(1.05);
+        transform: translate3d(0, 0, 0) rotate(0deg);
     }
     50% {
-        transform: translate(-5%, 12%) rotate(-2deg) scale(0.95);
-    }
-    75% {
-        transform: translate(-12%, -5%) rotate(4deg) scale(1.08);
+        transform: translate3d(8%, -8%, 0) rotate(2deg);
     }
 }
 
-/* Drifting animation - slower, offset timing */
-@keyframes organicDrift {
-    0%, 100% {
-        transform: translate(0%, 0%) rotate(0deg);
-    }
-    33% {
-        transform: translate(-15%, 10%) rotate(-5deg);
-    }
-    66% {
-        transform: translate(8%, -15%) rotate(3deg);
-    }
-}
-
-/* Breathing animation - pulsing alive effect */
+/* Optimized breathing - only opacity (GPU accelerated) */
 @keyframes breathe {
     0%, 100% {
-        transform: scale(1) translate(0%, 0%);
-        opacity: 0.6;
+        opacity: 0.5;
     }
     50% {
-        transform: scale(1.15) translate(5%, -5%);
-        opacity: 0.9;
+        opacity: 0.8;
     }
 }
 
