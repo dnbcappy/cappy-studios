@@ -70,35 +70,22 @@ body {
    ============================================ */
 
 #header {
-    background-image: url('../../images/header-bg.jpg');
+    background-image:
+        linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)),
+        url('../../images/header-bg.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    position: relative;
-}
-
-/* Dark overlay for header background */
-#header:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(10, 10, 10, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    z-index: -1;
+    border-bottom: 1px solid var(--glass-border);
 }
 
 #header.alt {
-    background-image: url('../../images/header-bg.jpg');
+    background-image:
+        linear-gradient(rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.4)),
+        url('../../images/header-bg.jpg');
     border-bottom: none;
-}
-
-/* Transparent overlay for alt state */
-#header.alt:before {
-    background: rgba(10, 10, 10, 0.4);
 }
 
 #header #logo {
@@ -146,7 +133,7 @@ body {
 /* Fix Contact button vertical alignment */
 #header nav ul li a.button {
     vertical-align: middle;
-    margin-top: 0.75em;
+    margin-top: 0.4em;
 }
 
 /* ============================================
