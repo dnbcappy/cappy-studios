@@ -142,14 +142,6 @@ body.landing #header,
         url('../../images/header-bg.jpg') center center / cover no-repeat !important;
 }
 
-/* Circular image container - fill and center */
-#banner .content .image img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center center !important;
-}
-
 /* Disable template's default overlay */
 #banner:after {
     display: none !important;
