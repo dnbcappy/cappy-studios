@@ -1,39 +1,26 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Cappy Studios | Belgium-based indie studio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Cappy Studios - Independent game development studio creating web games, idle games, and creative digital experiences." />
-    <meta name="keywords" content="indie games, web games, idle games, game development, pixel art, Snake-50, Cappy Studios, Belgium game developer" />
-    <meta name="author" content="Dylan Callens - Cappy Studios" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://cappystudios.dev/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cappy Studios - Indie Games from Belgium</title>
+    <meta name="description" content="Cappy Studios is an independent game development studio from Belgium, creating web games, narrative adventures, and pixel art.">
+    <meta name="keywords" content="indie games, web games, idle games, pixel art, game development, Snake-50, Cappy Studios, Belgium game developer">
+    <meta name="author" content="Dylan Callens - Cappy Studios">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cappystudios.dev/">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://cappystudios.dev/" />
-    <meta property="og:title" content="Cappy Studios | Belgium-based indie studio" />
-    <meta property="og:description" content="Independent game development studio creating web games, idle games, and creative digital experiences." />
-    <meta property="og:image" content="https://cappystudios.dev/images/og-image.jpg" />
-    <meta property="og:site_name" content="Cappy Studios" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cappystudios.dev/">
+    <meta property="og:title" content="Cappy Studios - Indie Games from Belgium">
+    <meta property="og:description" content="Independent game studio creating web games, narrative adventures, and pixel art.">
+    <meta property="og:site_name" content="Cappy Studios">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cappystudios">
+    <meta name="theme-color" content="#0b0b14">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://cappystudios.dev/" />
-    <meta name="twitter:title" content="Cappy Studios | Belgium-based indie studio" />
-    <meta name="twitter:description" content="Independent game development studio creating web games, idle games, and creative digital experiences." />
-    <meta name="twitter:image" content="https://cappystudios.dev/images/og-image.jpg" />
-    <meta name="twitter:site" content="@cappystudios" />
-
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#0a0a0a" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png" />
-    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TEKTC39ZQ"></script>
@@ -44,381 +31,519 @@
       gtag('config', 'G-4TEKTC39ZQ');
     </script>
 
-    <!-- Preload Critical CSS -->
-    <link rel="preload" href="assets/css/main.css" as="style">
-    <link rel="preload" href="assets/css/custom.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Cappy Studios",
-      "url": "https://cappystudios.dev",
-      "logo": "https://cappystudios.dev/images/logo.png",
-      "description": "Independent game development studio creating web games, idle games, and creative digital experiences.",
-      "founder": {
-        "@type": "Person",
-        "name": "Dylan Callens"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "BE"
-      },
-      "sameAs": [
-        "https://github.com/dnbcappy",
-        "https://www.linkedin.com/company/cappy-studios/",
-        "https://x.com/cappystudios",
-        "https://www.instagram.com/cappystudios/"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "cappystudios.dev@gmail.com",
-        "contactType": "Customer Service"
-      }
-    }
-    </script>
+        :root {
+            --bg-deep: #07070e;
+            --bg-base: #0b0b14;
+            --bg-surface: #11111c;
+            --bg-card: #161625;
+            --bg-hover: #1c1c2e;
+            --accent: #e8a628;
+            --accent-hover: #f0b840;
+            --accent-dim: rgba(232, 166, 40, 0.12);
+            --accent-red: #d94452;
+            --accent-green: #3ddc84;
+            --accent-blue: #4a9eff;
+            --text: #e4e4ec;
+            --text-secondary: #9898ab;
+            --text-muted: #5e5e72;
+            --text-dim: #3a3a4d;
+            --border: rgba(255, 255, 255, 0.06);
+            --border-hover: rgba(255, 255, 255, 0.1);
+            --font-display: 'Syne', sans-serif;
+            --font-body: 'DM Sans', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+            --max-width: 1200px;
+            --gutter: clamp(1.5rem, 5vw, 4rem);
+        }
+
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--font-body); background: var(--bg-deep); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+
+        body::after {
+            content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: 0.022;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            background-size: 128px 128px;
+        }
+
+        .cursor-glow {
+            position: fixed; width: 500px; height: 500px; border-radius: 50%; pointer-events: none; z-index: 0;
+            background: radial-gradient(circle, rgba(232, 166, 40, 0.04) 0%, transparent 70%);
+            transform: translate(-50%, -50%); transition: opacity 0.3s; opacity: 0;
+        }
+        .cursor-glow.active { opacity: 1; }
+
+        ::selection { background: var(--accent); color: var(--bg-deep); }
+        a { color: inherit; text-decoration: none; }
+        img { display: block; max-width: 100%; }
+        .pixel-render { image-rendering: pixelated; image-rendering: -moz-crisp-edges; image-rendering: crisp-edges; }
+
+        /* NAV */
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 0 var(--gutter); transition: background 0.4s, backdrop-filter 0.4s, box-shadow 0.4s; }
+        .nav.scrolled { background: rgba(11, 11, 20, 0.88); backdrop-filter: blur(24px) saturate(1.4); -webkit-backdrop-filter: blur(24px) saturate(1.4); box-shadow: 0 1px 0 var(--border); }
+        .nav-inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+        .nav-logo { font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; letter-spacing: -0.02em; display: flex; align-items: center; gap: 0.65rem; transition: opacity 0.2s; }
+        .nav-logo:hover { opacity: 0.8; }
+        .nav-logo img { width: 34px; height: 34px; border-radius: 6px; }
+        .nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
+        .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); letter-spacing: 0.02em; transition: color 0.25s; position: relative; }
+        .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1.5px; background: var(--accent); transition: width 0.3s var(--ease-out); }
+        .nav-links a:hover { color: var(--text); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta { font-family: var(--font-mono) !important; font-size: 0.8rem !important; padding: 0.5rem 1.2rem; border: 1px solid var(--border-hover); border-radius: 6px; transition: all 0.25s !important; }
+        .nav-cta:hover { border-color: var(--accent) !important; color: var(--accent) !important; background: var(--accent-dim); }
+        .nav-cta::after { display: none !important; }
+
+        .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1001; }
+        .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--text); margin: 5px 0; transition: all 0.3s; border-radius: 1px; }
+        .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .nav-toggle.active span:nth-child(2) { opacity: 0; }
+        .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        /* HERO */
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding: 0 var(--gutter); overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; z-index: 0; }
+        .hero-bg .gradient-orb { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.12; animation: float-orb 20s ease-in-out infinite; }
+        .hero-bg .orb-1 { width: 600px; height: 600px; background: var(--accent); top: -20%; right: -10%; }
+        .hero-bg .orb-2 { width: 400px; height: 400px; background: var(--accent-red); bottom: -10%; left: -5%; animation-delay: -7s; }
+        .hero-bg .orb-3 { width: 300px; height: 300px; background: var(--accent-blue); top: 40%; left: 30%; animation-delay: -14s; }
+        @keyframes float-orb { 0%, 100% { transform: translate(0, 0) scale(1); } 25% { transform: translate(30px, -40px) scale(1.05); } 50% { transform: translate(-20px, 20px) scale(0.95); } 75% { transform: translate(10px, 30px) scale(1.02); } }
+        .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px); background-size: 80px 80px; mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%); -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%); opacity: 0.4; }
+        .hero-content { position: relative; z-index: 1; text-align: center; max-width: 820px; }
+
+        .hero-mascot { width: 100px; height: 100px; margin: 0 auto 2rem; border-radius: 16px; animation: float-mascot 4s ease-in-out infinite, fade-up 0.8s var(--ease-out) 0.1s forwards; opacity: 0; filter: drop-shadow(0 8px 30px rgba(232, 166, 40, 0.2)); }
+        @keyframes float-mascot { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+        .hero-tag { font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.5rem; opacity: 0; animation: fade-up 0.8s var(--ease-out) 0.3s forwards; }
+        .hero-title { font-family: var(--font-display); font-size: clamp(2.8rem, 7.5vw, 5.5rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.5rem; opacity: 0; animation: fade-up 0.8s var(--ease-out) 0.5s forwards; }
+        .hero-title .highlight { color: var(--accent); }
+        .hero-sub { font-size: clamp(1rem, 2.5vw, 1.2rem); color: var(--text-secondary); max-width: 500px; margin: 0 auto 2.5rem; line-height: 1.7; opacity: 0; animation: fade-up 0.8s var(--ease-out) 0.7s forwards; }
+        .hero-actions { display: flex; align-items: center; justify-content: center; gap: 1rem; opacity: 0; animation: fade-up 0.8s var(--ease-out) 0.9s forwards; }
+        @keyframes fade-up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.8rem; font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; border-radius: 8px; border: none; cursor: pointer; transition: all 0.3s var(--ease-out); }
+        .btn-primary { background: var(--accent); color: var(--bg-deep); }
+        .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(232, 166, 40, 0.25); }
+        .btn-ghost { background: transparent; color: var(--text-secondary); border: 1px solid var(--border-hover); }
+        .btn-ghost:hover { color: var(--text); border-color: var(--text-muted); transform: translateY(-2px); }
+
+        .hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: var(--text-muted); font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; opacity: 0; animation: fade-up 0.8s var(--ease-out) 1.3s forwards; }
+        .hero-scroll .line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--text-muted), transparent); animation: scroll-line 2s ease-in-out infinite; }
+        @keyframes scroll-line { 0%, 100% { opacity: 0.3; transform: scaleY(0.5); transform-origin: top; } 50% { opacity: 1; transform: scaleY(1); } }
+
+        /* SECTIONS */
+        .section { padding: clamp(5rem, 12vh, 8rem) var(--gutter); }
+        .section-inner { max-width: var(--max-width); margin: 0 auto; }
+        .section-header { margin-bottom: 4rem; }
+        .section-label { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+        .section-label::before { content: ''; width: 24px; height: 1px; background: var(--accent); }
+        .section-title { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
+        .section-desc { color: var(--text-secondary); font-size: 1.05rem; margin-top: 1rem; max-width: 500px; line-height: 1.7; }
+
+        .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* GAMES */
+        .games-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .game-card { position: relative; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: all 0.4s var(--ease-out); }
+        .game-card:hover { border-color: var(--border-hover); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); }
+        .game-card-image { position: relative; width: 100%; aspect-ratio: 16 / 10; overflow: hidden; background: var(--bg-deep); }
+        .game-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease-out); }
+        .game-card:hover .game-card-image img { transform: scale(1.05); }
+        .game-card-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--bg-card) 0%, transparent 50%); }
+        .game-status { position: absolute; top: 1rem; left: 1rem; z-index: 2; font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500; padding: 0.35rem 0.75rem; border-radius: 50px; letter-spacing: 0.05em; text-transform: uppercase; }
+        .status-live { background: rgba(61, 220, 132, 0.15); color: var(--accent-green); border: 1px solid rgba(61, 220, 132, 0.25); }
+        .status-dev { background: rgba(232, 166, 40, 0.15); color: var(--accent); border: 1px solid rgba(232, 166, 40, 0.25); }
+        .status-planned { background: rgba(74, 158, 255, 0.12); color: var(--accent-blue); border: 1px solid rgba(74, 158, 255, 0.2); }
+        .game-card-body { padding: 1.75rem; }
+        .game-card-title { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; margin-bottom: 0.75rem; letter-spacing: -0.01em; }
+        .game-card-desc { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem; }
+        .game-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+        .game-tag { font-family: var(--font-mono); font-size: 0.7rem; padding: 0.3rem 0.65rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 4px; color: var(--text-muted); }
+        .game-card-link { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; font-weight: 600; color: var(--accent); transition: gap 0.3s var(--ease-out); }
+        .game-card-link:hover { gap: 0.8rem; }
+        .game-card-link .arrow { transition: transform 0.3s var(--ease-out); font-size: 1.1rem; }
+        .game-card-link:hover .arrow { transform: translateX(3px); }
+
+        .upcoming-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem; }
+        .upcoming-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; transition: all 0.3s var(--ease-out); }
+        .upcoming-card:hover { border-color: var(--border-hover); background: var(--bg-hover); }
+        .upcoming-card .game-card-title { font-size: 1.1rem; }
+        .upcoming-card .game-card-desc { font-size: 0.85rem; }
+
+        /* ART */
+        .art-section { background: var(--bg-base); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .art-marquee { overflow: hidden; margin-top: 3rem; mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); }
+        .art-track { display: flex; gap: 1.5rem; animation: marquee 40s linear infinite; width: max-content; }
+        .art-track:hover { animation-play-state: paused; }
+        @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+        .art-item { flex-shrink: 0; width: 320px; height: 210px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-card); transition: all 0.3s var(--ease-out); cursor: pointer; }
+        .art-item:hover { border-color: var(--accent); transform: scale(1.03); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); }
+        .art-item img { width: 100%; height: 100%; object-fit: cover; }
+        .art-item-sprite { width: 180px; height: 210px; background: var(--bg-deep); }
+        .art-item-sprite img { object-fit: contain; padding: 1rem; }
+        .art-track-reverse { animation-direction: reverse; }
+
+        /* ABOUT */
+        .about-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .about-text h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; }
+        .about-text p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1rem; }
+        .about-text p:last-of-type { margin-bottom: 2rem; }
+        .about-quote { font-family: var(--font-display); font-style: italic; font-size: 1.05rem; color: var(--text-muted); border-left: 2px solid var(--accent); padding-left: 1.25rem; margin: 2rem 0; }
+        .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+        .stat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; text-align: center; }
+        .stat-number { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: 0.4rem; }
+        .stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+        .about-visual { position: relative; }
+        .about-art-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .about-art-item { border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-card); aspect-ratio: 1; transition: all 0.3s var(--ease-out); }
+        .about-art-item:hover { border-color: var(--border-hover); transform: scale(1.02); }
+        .about-art-item img { width: 100%; height: 100%; object-fit: cover; }
+        .about-art-item:nth-child(2) { margin-top: 2rem; }
+        .about-art-item:nth-child(3) { margin-top: -2rem; }
+        .tech-strip { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+        .tech-pill { font-family: var(--font-mono); font-size: 0.75rem; padding: 0.45rem 1rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 6px; color: var(--text-secondary); transition: all 0.25s; }
+        .tech-pill:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
+
+        /* CTA */
+        .cta-section { text-align: center; position: relative; overflow: hidden; }
+        .cta-section::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; background: radial-gradient(circle, var(--accent-dim), transparent 70%); pointer-events: none; }
+        .cta-title { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1rem; position: relative; }
+        .cta-desc { color: var(--text-secondary); font-size: 1.1rem; max-width: 450px; margin: 0 auto 2.5rem; line-height: 1.7; position: relative; }
+        .cta-actions { display: flex; justify-content: center; gap: 1rem; position: relative; }
+
+        /* FOOTER */
+        .footer { border-top: 1px solid var(--border); padding: 3rem var(--gutter); }
+        .footer-inner { max-width: var(--max-width); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .footer-left { display: flex; align-items: center; gap: 1rem; }
+        .footer-logo { width: 32px; height: 32px; border-radius: 6px; }
+        .footer-text { display: flex; flex-direction: column; gap: 0.2rem; }
+        .footer-brand { font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; }
+        .footer-copy { font-size: 0.78rem; color: var(--text-muted); }
+        .footer-socials { display: flex; gap: 0.5rem; }
+        .social-link { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--border); color: var(--text-muted); transition: all 0.25s; }
+        .social-link:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); transform: translateY(-2px); }
+        .social-link svg { width: 18px; height: 18px; fill: currentColor; }
+        .footer-credit { text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+        .footer-credit a { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim); letter-spacing: 0.05em; transition: color 0.25s; }
+        .footer-credit a:hover { color: var(--accent); }
+
+        /* LIGHTBOX */
+        .lightbox { position: fixed; inset: 0; z-index: 10000; background: rgba(0, 0, 0, 0.92); display: flex; align-items: center; justify-content: center; padding: 2rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; cursor: pointer; backdrop-filter: blur(10px); }
+        .lightbox.active { opacity: 1; pointer-events: all; }
+        .lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 12px; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5); }
+        .lightbox::after { content: 'ESC'; position: absolute; top: 2rem; right: 2rem; font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); border: 1px solid var(--text-dim); padding: 0.3rem 0.6rem; border-radius: 4px; }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .games-grid, .upcoming-grid { grid-template-columns: 1fr; }
+            .about-layout { grid-template-columns: 1fr; gap: 3rem; }
+            .about-visual { order: -1; }
+            .cursor-glow { display: none; }
+            .nav-links { display: none; }
+            .nav-toggle { display: block; }
+            .nav-links.open { display: flex; flex-direction: column; position: fixed; inset: 0; background: var(--bg-deep); z-index: 999; align-items: center; justify-content: center; gap: 2rem; animation: fade-in 0.3s ease; }
+            .nav-links.open a { font-size: 1.4rem; color: var(--text); }
+            .nav-links.open .nav-cta { font-size: 1.1rem !important; padding: 0.75rem 2rem; }
+            @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+            .hero-actions { flex-direction: column; width: 100%; }
+            .hero-actions .btn { width: 100%; justify-content: center; }
+            .footer-inner { flex-direction: column; gap: 2rem; text-align: center; }
+            .footer-left { flex-direction: column; }
+        }
+        @media (max-width: 600px) {
+            .stat-card { padding: 1rem; }
+            .stat-number { font-size: 1.5rem; }
+            .art-item { width: 220px; height: 150px; }
+            .about-art-grid { gap: 0.75rem; }
+            .hero-mascot { width: 80px; height: 80px; }
+        }
+    </style>
 </head>
-<body class="is-preload landing">
+<body>
 
-    <!-- Page Loader -->
-    <div class="page-loader">
-        <div class="loader-logo">CAPPY STUDIOS</div>
-        <img src="images/pixel-art/frogger.png" alt="Frogger Mascot" class="loader-mascot" />
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="Cappy Studios" class="pixel-render">
+                <span>Cappy Studios</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#games">Games</a></li>
+                <li><a href="#art">Art</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="mailto:cappystudios.dev@gmail.com" class="nav-cta">Say hello</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <img src="images/logo.png" alt="Cappy Studios mascot" class="hero-mascot pixel-render">
+            <p class="hero-tag">indie game studio · belgium</p>
+            <h1 class="hero-title">We make games<br>we want to <span class="highlight">play</span></h1>
+            <p class="hero-sub">Small studio, big ideas. From retro web games to narrative adventures and everything in between.</p>
+            <div class="hero-actions">
+                <a href="#games" class="btn btn-primary">See our games ↓</a>
+                <a href="https://snake50.com/" target="_blank" class="btn btn-ghost">Play Snake-50</a>
+            </div>
+        </div>
+        <div class="hero-scroll"><span>scroll</span><div class="line"></div></div>
+    </section>
+
+    <!-- GAMES -->
+    <section class="section" id="games">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <p class="section-label">Our Games</p>
+                <h2 class="section-title">What we're building</h2>
+                <p class="section-desc">From playable web games to ambitious projects in the works.</p>
+            </div>
+            <div class="games-grid">
+                <div class="game-card reveal reveal-delay-1">
+                    <div class="game-card-image">
+                        <img src="images/snake-50-preview.png" alt="Snake-50" class="pixel-render">
+                        <span class="game-status status-live">● Live</span>
+                    </div>
+                    <div class="game-card-body">
+                        <h3 class="game-card-title">Snake-50</h3>
+                        <p class="game-card-desc">Classic snake, reimagined. Multiple game modes, global leaderboards, user accounts, and a neon aesthetic. Our first released game.</p>
+                        <div class="game-tags">
+                            <span class="game-tag">JavaScript</span>
+                            <span class="game-tag">Firebase</span>
+                            <span class="game-tag">Canvas</span>
+                            <span class="game-tag">Web Game</span>
+                        </div>
+                        <a href="https://snake50.com/" target="_blank" class="game-card-link">Play now <span class="arrow">→</span></a>
+                    </div>
+                </div>
+                <div class="game-card reveal reveal-delay-2">
+                    <div class="game-card-image">
+                        <img src="images/crybaby-preview.png" alt="Once I Was a Crybaby" class="pixel-render">
+                        <span class="game-status status-dev">◐ In Development</span>
+                    </div>
+                    <div class="game-card-body">
+                        <h3 class="game-card-title">Once I Was a Crybaby</h3>
+                        <p class="game-card-desc">A narrative-driven pixel art adventure built with Godot. Explore, solve puzzles, and uncover a deeply personal story. Developed with a small team.</p>
+                        <div class="game-tags">
+                            <span class="game-tag">Godot</span>
+                            <span class="game-tag">GDScript</span>
+                            <span class="game-tag">Narrative</span>
+                            <span class="game-tag">Pixel Art</span>
+                        </div>
+                        <span class="game-card-link" style="cursor:default;">Follow progress <span class="arrow">→</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="upcoming-grid">
+                <div class="upcoming-card reveal reveal-delay-3">
+                    <span class="game-status status-dev" style="position:static;display:inline-block;margin-bottom:1rem;">◐ In Development</span>
+                    <h3 class="game-card-title">Tower Defense 3D</h3>
+                    <p class="game-card-desc">One tower. Buy sections, upgrade them, and defend against waves of enemies. A 3D twist on the classic tower defense formula.</p>
+                    <div class="game-tags"><span class="game-tag">3D</span><span class="game-tag">Tower Defense</span><span class="game-tag">Strategy</span></div>
+                </div>
+                <div class="upcoming-card reveal reveal-delay-4">
+                    <span class="game-status status-planned" style="position:static;display:inline-block;margin-bottom:1rem;">Planned</span>
+                    <h3 class="game-card-title">Tea Farmer Idle</h3>
+                    <p class="game-card-desc">Grow your tea farm from a tiny plot to a full plantation. Chill vibes with enough depth to keep things interesting.</p>
+                    <div class="game-tags"><span class="game-tag">Idle Game</span><span class="game-tag">Relaxing</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIXEL ART -->
+    <section class="section art-section" id="art">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <p class="section-label">Pixel Art</p>
+                <h2 class="section-title">One pixel at a time</h2>
+                <p class="section-desc">Game assets, environments, and original art - all crafted pixel by pixel.</p>
+            </div>
+        </div>
+        <div class="art-marquee">
+            <div class="art-track">
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/crybaby-preview.png" alt="Crybaby scene" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/ChillWoodsAniButterfly.gif" alt="Chill Woods" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_3_Eye-Sheet.png" alt="Eye pixel art" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_1_Earth-Sheet.png" alt="Earth from space" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_4_Sun-Sheet.png" alt="Sun through window" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_2_Hospital-Sheet.png" alt="Hospital scene" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/crybaby-preview.png" alt="Crybaby scene" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/ChillWoodsAniButterfly.gif" alt="Chill Woods" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_3_Eye-Sheet.png" alt="Eye pixel art" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_1_Earth-Sheet.png" alt="Earth from space" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_4_Sun-Sheet.png" alt="Sun through window" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_2_Hospital-Sheet.png" alt="Hospital scene" class="pixel-render"></div>
+            </div>
+        </div>
+        <div class="art-marquee" style="margin-top:1.5rem;">
+            <div class="art-track art-track-reverse">
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_2_Hospital-Sheet.png" alt="Hospital scene" class="pixel-render"></div>
+                <div class="art-item art-item-sprite" onclick="openLightbox(this)"><img src="images/Robo_Deco.png" alt="Robot enemy" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/snake-50-preview.png" alt="Snake-50" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_4_Sun-Sheet.png" alt="Sun through window" class="pixel-render"></div>
+                <div class="art-item art-item-sprite" onclick="openLightbox(this)"><img src="images/Chest_Deco.png" alt="Treasure chest" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/ChillWoodsAniButterfly.gif" alt="Forest" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_1_Earth-Sheet.png" alt="Earth" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_3_Eye-Sheet.png" alt="Eye" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_2_Hospital-Sheet.png" alt="Hospital scene" class="pixel-render"></div>
+                <div class="art-item art-item-sprite" onclick="openLightbox(this)"><img src="images/Robo_Deco.png" alt="Robot enemy" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/snake-50-preview.png" alt="Snake-50" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_4_Sun-Sheet.png" alt="Sun through window" class="pixel-render"></div>
+                <div class="art-item art-item-sprite" onclick="openLightbox(this)"><img src="images/Chest_Deco.png" alt="Treasure chest" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/ChillWoodsAniButterfly.gif" alt="Forest" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_1_Earth-Sheet.png" alt="Earth" class="pixel-render"></div>
+                <div class="art-item" onclick="openLightbox(this)"><img src="images/Intro_Part_3_Eye-Sheet.png" alt="Eye" class="pixel-render"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="section-inner">
+            <div class="about-layout">
+                <div class="about-text reveal">
+                    <p class="section-label">About the Studio</p>
+                    <h3>Hey, I'm Dylan</h3>
+                    <p>Developer, game maker, and creative thinker based in Belgium. I left my job to go all-in on game dev and building things I care about. Cappy Studios is where those ideas become real projects.</p>
+                    <p>It started with CS50 and a curiosity for how games work. That first project turned into Snake-50, and now there's a narrative adventure in development, idle games on the horizon, and always something new brewing.</p>
+                    <blockquote class="about-quote">"There is something to learn in every scenario."</blockquote>
+                    <div class="tech-strip">
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">Godot</span>
+                        <span class="tech-pill">GDScript</span>
+                        <span class="tech-pill">HTML/CSS</span>
+                        <span class="tech-pill">Firebase</span>
+                        <span class="tech-pill">C</span>
+                        <span class="tech-pill">Pixel Art</span>
+                    </div>
+                </div>
+                <div class="about-visual reveal reveal-delay-2">
+                    <div class="about-art-grid">
+                        <div class="about-art-item"><img src="images/Intro_Part_3_Eye-Sheet.png" alt="Eye" class="pixel-render"></div>
+                        <div class="about-art-item"><img src="images/ChillWoodsAniButterfly.gif" alt="Woods" class="pixel-render"></div>
+                        <div class="about-art-item"><img src="images/Intro_Part_4_Sun-Sheet.png" alt="Sun" class="pixel-render"></div>
+                        <div class="about-art-item"><img src="images/Intro_Part_1_Earth-Sheet.png" alt="Earth" class="pixel-render"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats reveal" style="margin-top:3rem;">
+                <div class="stat-card"><div class="stat-number">1</div><div class="stat-label">Game Live</div></div>
+                <div class="stat-card"><div class="stat-number">3</div><div class="stat-label">In Progress</div></div>
+                <div class="stat-card"><div class="stat-number">∞</div><div class="stat-label">Ideas</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section" id="contact">
+        <div class="section-inner reveal">
+            <h2 class="cta-title">Let's make something cool</h2>
+            <p class="cta-desc">Interested in collaborating, giving feedback, or just saying hi? We're always open to interesting conversations.</p>
+            <div class="cta-actions">
+                <a href="mailto:cappystudios.dev@gmail.com" class="btn btn-primary">Get in touch</a>
+                <a href="https://github.com/dnbcappy" target="_blank" class="btn btn-ghost">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <img src="images/logo.png" alt="Cappy Studios" class="footer-logo pixel-render">
+                <div class="footer-text">
+                    <span class="footer-brand">Cappy Studios</span>
+                    <span class="footer-copy">© 2025–2026 · Built in Belgium</span>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <a href="https://github.com/dnbcappy" target="_blank" class="social-link" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                <a href="https://x.com/cappystudios" target="_blank" class="social-link" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a href="https://www.instagram.com/cappystudios/" target="_blank" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                <a href="https://www.youtube.com/@cappystudios" target="_blank" class="social-link" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                <a href="https://www.tiktok.com/@cappystudiosdev" target="_blank" class="social-link" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                <a href="https://www.linkedin.com/company/cappy-studios/" target="_blank" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            </div>
+        </div>
+        <div class="footer-credit">
+            <a href="https://webowl.be" target="_blank">Website by WebOwl</a>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImg" src="" alt="Pixel art preview">
     </div>
 
-    <!-- Ripple Effect Canvas -->
-    <canvas id="ripple-canvas"></canvas>
+    <script>
+        const glow = document.getElementById('cursorGlow');
+        let glowActive = false;
+        document.addEventListener('mousemove', (e) => {
+            if (!glowActive) { glow.classList.add('active'); glowActive = true; }
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+        }, { passive: true });
+        document.addEventListener('mouseleave', () => { glow.classList.remove('active'); glowActive = false; });
 
-    <div id="page-wrapper">
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
 
-        <!-- Header / Navigation -->
-        <header id="header" class="alt">
-            <h1 id="logo"><a href="index.html">Cappy Studios</a></h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                        <ul>
-                            <li><a href="projects.html#games">Games</a></li>
-                            <li><a href="projects.html#websites">Websites & Apps</a></li>
-                            <li><a href="projects.html#pixel-art">Pixel Art</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="button primary">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); navToggle.classList.toggle('active'); });
+        navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('open'); navToggle.classList.remove('active'); }); });
 
-        <!-- Hero Banner with Sliding Background -->
-        <section id="banner">
-            <!-- Sliding Background Images -->
-            <div class="hero-slider">
-                <!-- Add your game screenshots here - these will crossfade -->
-                <div class="slide" style="background-image: url('images/games/snake-50-bg.png');"></div>
-                <div class="slide" style="background-image: url('images/games/crybaby-bg.svg');"></div>
-                <div class="slide" style="background-image: url('images/games/trucker-idle-bg.svg');"></div>
-                <div class="slide" style="background-image: url('images/banner.jpg');"></div>
-            </div>
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        revealElements.forEach(el => revealObserver.observe(el));
 
-            <div class="content">
-                <header>
-                    <span class="tagline">Belgium-based indie studio</span>
-                    <h2>Cappy Studios</h2>
-                    <p>Making games and web stuff we actually want to play.</p> 
-                    <p>From web games to idle games to whatever sounds fun to build.</p>
-                </header>
-            </div>
-            <a href="#about" class="goto-next scrolly">Next</a>
-        </section>
+        function openLightbox(el) {
+            const img = el.querySelector('img');
+            const lb = document.getElementById('lightbox');
+            document.getElementById('lightboxImg').src = img.src;
+            document.getElementById('lightboxImg').className = img.className;
+            lb.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); document.body.style.overflow = ''; }
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
 
-        <!-- About / Introduction Section -->
-        <section id="about" class="spotlight style1 bottom">
-            <span class="image fit main"><img src="images/pic02.jpg" alt="" loading="lazy" /></span>
-            <div class="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4 col-12-medium">
-                            <header>
-                                <h2>The Vision</h2>
-                                <p>We build what we want to play</p>
-                            </header>
-                        </div>
-                        <div class="col-4 col-12-medium">
-                            <p>Cappy Studios is a small indie studio making games, web apps, and pixel art.
-                            Started with Snake-50, now working on bigger projects like idle games and
-                            narrative adventures. If it sounds fun to build, we're probably working on it.</p>
-                        </div>
-                        <div class="col-4 col-12-medium">
-                            <p>Based in Belgium. Coding, making games, and always working on something new.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="#games" class="goto-next scrolly">Next</a>
-        </section>
-
-        <!-- Games Showcase Section -->
-        <section id="games" class="wrapper style1 special fade-up">
-            <div class="container">
-                <header class="major">
-                    <h2>Games & Projects</h2>
-                    <p>From web-based classics to ambitious idle games in development</p>
-                </header>
-
-                <div class="box alt">
-                    <div class="row gtr-uniform">
-                        
-                        <!-- Snake-50 - LIVE -->
-                        <div class="col-6 col-12-medium">
-                            <div class="glass-card game-card">
-                                <img src="images/games/snake-50-preview.png" alt="Snake-50 Game" loading="lazy" />
-                                <div class="overlay">
-                                    <span class="status live">Live</span>
-                                    <h3>Snake-50</h3>
-                                    <p>Classic snake reimagined with multiple game modes, 
-                                    authentication, and global leaderboards. Built with 
-                                    vanilla JavaScript and Firebase.</p>
-                                    <a href="https://snake-50.web.app/" class="btn btn-primary" target="_blank">Play Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Once I Was a Crybaby - IN DEV -->
-                        <div class="col-6 col-12-medium">
-                            <div class="glass-card game-card">
-                                <img src="images/games/crybaby-preview.png" alt="Once I Was a Crybaby" loading="lazy" />
-                                <div class="overlay">
-                                    <span class="status development">In Development</span>
-                                    <h3>Once I Was a Crybaby</h3>
-                                    <p>A narrative-driven adventure built with Godot, developed 
-                                    in collaboration with a small team.</p>
-                                    <a href="#" class="btn btn-outline">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Trucker Idle - PLANNED -->
-                        <div class="col-6 col-12-medium">
-                            <div class="glass-card game-card">
-                                <img src="images/games/trucker-idle-preview.svg" alt="Trucker Idle" loading="lazy" />
-                                <div class="overlay">
-                                    <span class="status planned">Planned</span>
-                                    <h3>Trucker Idle</h3>
-                                    <p>Build your trucking empire from scratch. Plan routes,
-                                    upgrade vehicles, hire drivers, and watch the money roll in.</p>
-                                    <a href="#" class="btn btn-outline">Coming Soon</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Tea Farmer Idle - PLANNED -->
-                        <div class="col-6 col-12-medium">
-                            <div class="glass-card game-card">
-                                <img src="images/games/tea-farmer-preview.svg" alt="Tea Farmer Idle" loading="lazy" />
-                                <div class="overlay">
-                                    <span class="status planned">Planned</span>
-                                    <h3>Tea Farmer Idle</h3>
-                                    <p>Grow your tea farm from a tiny plot to a full plantation.
-                                    Chill vibes, but with enough depth to keep things interesting.</p>
-                                    <a href="#" class="btn btn-outline">Coming Soon</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <footer class="major">
-                    <ul class="actions special">
-                        <li><a href="projects.html" class="button">View All Projects</a></li>
-                    </ul>
-                </footer>
-            </div>
-        </section>
-
-        <!-- Skills & Tech Section -->
-        <section id="skills" class="spotlight style2 right">
-            <span class="image fit main"><img src="images/pic03.jpg" alt="" loading="lazy" /></span>
-            <div class="content">
-                <header>
-                    <h2>Skills & Technologies</h2>
-                    <p>The tools behind the creations</p>
-                </header>
-                
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="fab fa-python"></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-js"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-css3-alt"></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>SQLite</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-code"></i>
-                        <span>C</span>
-                    </div>
-                </div>
-                
-                <ul class="actions" style="margin-top: 2rem;">
-                    <li><a href="about.html" class="button">More About Me</a></li>
-                </ul>
-            </div>
-            <a href="#pixel-art" class="goto-next scrolly">Next</a>
-        </section>
-
-        <!-- Pixel Art Showcase -->
-        <section id="pixel-art" class="spotlight style3 left">
-            <span class="image fit main bottom"><img src="images/pic04.jpg" alt="" loading="lazy" /></span>
-            <div class="content">
-                <header>
-                    <h2>Pixel Art</h2>
-                    <p>Digital art one pixel at a time</p>
-                </header>
-                <p>Besides coding, we also love making pixel art. It's a nice mix of 
-                technical and creative work, and it fits perfectly with game dev. Check out the gallery for 
-                art and assets made by the team.</p>
-                <ul class="actions">
-                    <li><a href="projects.html#pixel-art" class="button">View Gallery</a></li>
-                </ul>
-            </div>
-            <a href="#partners" class="goto-next scrolly">Next</a>
-        </section>
-
-        <!-- Partners / Collaborations (Future) -->
-        <section id="partners" class="partners-section">
-            <div class="container">
-                <header style="text-align: center; margin-bottom: 2rem;">
-                    <h3 style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 3px; font-size: 0.9rem;">
-                        Collaborations & Tools
-                    </h3>
-                </header>
-                <div class="partners-track">
-                    <!-- Partner/tool logos will go here -->
-                    <!-- Placeholder for now - add real logos later -->
-                    <img src="images/partners/firebase-logo.svg" alt="Firebase" loading="lazy" />
-                    <img src="images/partners/godot-logo.svg" alt="Godot" loading="lazy" />
-                    <img src="images/partners/cs50-logo.svg" alt="CS50" loading="lazy" />
-                    <!-- Duplicate for seamless scroll -->
-                    <img src="images/partners/firebase-logo.svg" alt="Firebase" loading="lazy" />
-                    <img src="images/partners/godot-logo.svg" alt="Godot" loading="lazy" />
-                    <img src="images/partners/cs50-logo.svg" alt="CS50" loading="lazy" />
-                </div>
-            </div>
-        </section>
-
-        <!-- Reviews / Testimonials (Future) -->
-        <section id="reviews" class="wrapper style1 special fade-up">
-            <div class="container">
-                <header class="major">
-                    <h2>What People Say</h2>
-                    <p>Reviews and feedback from players and collaborators</p>
-                </header>
-                
-                <div class="box alt">
-                    <div class="row gtr-uniform">
-                        <div class="col-4 col-12-medium">
-                            <div class="glass-card" style="text-align: center;">
-                                <i class="fas fa-quote-left" style="font-size: 2rem; opacity: 0.3; margin-bottom: 1rem;"></i>
-                                <p style="font-style: italic; color: var(--text-secondary);">
-                                    "Coming soon"
-                                </p>
-                                <span style="color: var(--text-muted);">— Future Player</span>
-                            </div>
-                        </div>
-                        <div class="col-4 col-12-medium">
-                            <div class="glass-card" style="text-align: center;">
-                                <i class="fas fa-quote-left" style="font-size: 2rem; opacity: 0.3; margin-bottom: 1rem;"></i>
-                                <p style="font-style: italic; color: var(--text-secondary);">
-                                    "Coming soon"
-                                </p>
-                                <span style="color: var(--text-muted);">— Future Collaborator</span>
-                            </div>
-                        </div>
-                        <div class="col-4 col-12-medium">
-                            <div class="glass-card" style="text-align: center;">
-                                <i class="fas fa-quote-left" style="font-size: 2rem; opacity: 0.3; margin-bottom: 1rem;"></i>
-                                <p style="font-style: italic; color: var(--text-secondary);">
-                                    "Coming soon"
-                                </p>
-                                <span style="color: var(--text-muted);">— You?</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section id="cta" class="cta-section">
-            <div class="container">
-                <header>
-                    <h2>Want to Work Together?</h2>
-                    <p>Have an idea? Want to collaborate? Looking for a partnership?<br />
-                    I'd love to hear from you.</p>
-                </header>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
-                    <a href="projects.html" class="btn btn-outline">View Projects</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="container">
-                <ul class="icons">
-                    <li><a href="https://github.com/dnbcappy" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-                    <li><a href="https://www.linkedin.com/company/cappy-studios/" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://x.com/cappystudios" class="icon brands alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://www.instagram.com/cappystudios/" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-                    <li><a href="mailto:cappystudios.dev@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-                
-                <div class="footer-links" style="margin: 2rem 0;">
-                    <a href="index.html">Home</a> · 
-                    <a href="projects.html">Projects</a> · 
-                    <a href="about.html">About</a> · 
-                    <a href="contact.html">Contact</a>
-                </div>
-                
-                <ul class="copyright">
-                    <li>&copy; 2025 - 2026 Cappy Studios. All rights reserved.</li>
-                </ul>
-            </div>
-        </footer>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/custom/cappy.js"></script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
 
 </body>
 </html>
